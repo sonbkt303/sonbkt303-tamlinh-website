@@ -21,10 +21,14 @@ export function QualitySection({
   imageAlt,
 }: QualitySectionProps) {
   return (
-    <section className="bg-primary px-4 py-16">
+    <section className="bg-white px-4 py-16">
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:px-6">
         <div>
-          <SectionHeading title={title} variant="gold" className="text-left" />
+          <SectionHeading
+            title={title}
+            variant="gold"
+            className="text-left [&_h2]:text-primary [&_div]:bg-primary"
+          />
           <div className="mt-8">
             <FeatureList items={features} />
           </div>
@@ -32,10 +36,10 @@ export function QualitySection({
           <h3 className="mt-10 text-lg font-bold uppercase leading-snug text-accent">
             {commitmentTitle}
           </h3>
-          <p className="mt-4 text-sm leading-relaxed text-white md:text-base">
+          <p className="mt-4 text-sm leading-relaxed text-gray-600 md:text-base">
             {commitment}
           </p>
-          <p className="mt-4 text-sm leading-relaxed text-white/90">{contactLine}</p>
+          <p className="mt-4 text-sm leading-relaxed text-gray-700">{contactLine}</p>
         </div>
 
         <div className="relative aspect-[4/5] overflow-hidden rounded-lg shadow-2xl">
