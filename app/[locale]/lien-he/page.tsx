@@ -4,7 +4,7 @@ import { getPageMetadata } from "@/lib/seo";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { crawledPageContent } from "@/lib/data/crawled";
 import { ContactInfo } from "@/components/ui/ContactInfo";
-import { Button, ExternalButton } from "@/components/ui/Button";
+import { ExternalButton } from "@/components/ui/Button";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { siteConfig } from "@/lib/site-config";
 
@@ -28,7 +28,6 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
   const t = await getTranslations("pages.contact");
   const tAbout = await getTranslations("pages.about");
-  const tCommon = await getTranslations("common");
   const tFloating = await getTranslations("floatingContact");
   const aboutContent = crawledPageContent.about;
 
@@ -64,9 +63,9 @@ export default async function ContactPage({ params }: ContactPageProps) {
       </section>
 
       <section className="section-padding bg-surface">
-        <div className="container-main max-w-5xl">
+        <div className="container-main max-w-4xl">
           <SectionHeading title={t("contactSectionTitle")} variant="light" />
-          <div className="mt-10">
+          <div className="mt-12">
             <ContactInfo />
           </div>
         </div>
@@ -82,14 +81,6 @@ export default async function ContactPage({ params }: ContactPageProps) {
           </div>
         </section>
       )}
-
-      <section className="border-t border-primary/10 bg-surface py-10">
-        <div className="container-main text-center">
-          <Button href="/" variant="ghost">
-            {tCommon("backHome")}
-          </Button>
-        </div>
-      </section>
     </>
   );
 }
