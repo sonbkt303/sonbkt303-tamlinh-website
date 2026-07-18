@@ -155,5 +155,9 @@
       "title": "Tin tức",
       "description": "Tin tức, kinh nghiệm và hướng dẫn về khắc bia mộ, máy bắn cát."
     }
+  },
+  "imageLightbox": {
+    "viewImage": "Xem ảnh: {title}",
+    "close": "Đóng"
   }
 }

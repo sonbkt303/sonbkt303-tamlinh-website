@@ -1,8 +1,8 @@
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { sandblasterImages, sandblasterVideo } from "@/lib/data/sandblaster-media";
 import { siteConfig } from "@/lib/site-config";
 import { ExternalButton } from "@/components/ui/Button";
+import { SandblasterMediaGallery } from "@/components/sections/SandblasterMediaGallery";
 
 function BulletList({
   items,
@@ -37,22 +37,7 @@ function ContentCard({ title, items }: { title: string; items: string[] }) {
 }
 
 function MediaGallery({ imageAlt }: { imageAlt: string }) {
-  return (
-    <div className="grid grid-cols-2 gap-3">
-      {sandblasterImages.map((image, index) => (
-        <div key={image} className="relative aspect-[4/3] overflow-hidden rounded-xl">
-          <Image
-            src={image}
-            alt={`${imageAlt} ${index + 1}`}
-            fill
-            sizes="(max-width: 1024px) 50vw, 25vw"
-            className="object-cover"
-            priority={index < 2}
-          />
-        </div>
-      ))}
-    </div>
-  );
+  return <SandblasterMediaGallery imageAlt={imageAlt} />;
 }
 
 export async function SandblasterHero() {
