@@ -98,16 +98,18 @@ export function ImageLightbox({
                 className="object-contain"
                 priority
               />
-            </div>
 
-            {caption && (
-              <p
-                id={titleId}
-                className="image-lightbox-caption mt-2 max-w-full px-4 py-2 text-center text-sm leading-relaxed md:text-base"
-              >
-                {caption}
-              </p>
-            )}
+              {caption && (
+                <div className="image-lightbox-caption">
+                  <p
+                    id={titleId}
+                    className="text-center text-sm font-normal leading-relaxed tracking-wide md:text-base"
+                  >
+                    {caption}
+                  </p>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </dialog>
