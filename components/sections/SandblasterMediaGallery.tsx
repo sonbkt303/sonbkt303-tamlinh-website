@@ -9,7 +9,7 @@ type SandblasterMediaGalleryProps = {
 
 export function SandblasterMediaGallery({ imageAlt }: SandblasterMediaGalleryProps) {
   return (
-    <div className="grid grid-cols-2 gap-3">
+    <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
       {sandblasterImages.map((image, index) => (
         <div key={image} className="overflow-hidden rounded-xl">
           <ImageLightbox

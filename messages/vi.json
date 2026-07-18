@@ -101,6 +101,31 @@
     "showcaseMachineDesc": "Máy phun cát tuần hoàn không bụi Tâm Linh Huyền Bí — chuyên khắc đá granite, gương kính nội thất. Hệ thống tuần hoàn hạt cát kín, lọc bụi 2 cấp, vận hành sạch và an toàn cho thợ.",
     "showcaseResultTitle": "Kết quả khắc",
     "showcaseResultDesc": "Kết quả khắc sắc nét, sâu, bền màu trên bia mộ đá, tranh đá, chữ Phúc — Lộc — Thọ và chi tiết mỹ nghệ. Phù hợp xưởng đá quy mô nhỏ đến lớn.",
+    "youtubeSectionTitle": "Video thực tế vận hành",
+    "youtubeSectionDesc": "Xem trực tiếp quy trình phun cát, khắc đá và vận hành máy tại xưởng Tâm Linh Huyền Bí — minh bạch, rõ ràng trước khi quyết định đầu tư.",
+    "youtubeVideos": {
+      "0": {
+        "title": "Demo máy phun cát tuần hoàn",
+        "desc": "Quy trình vận hành máy phun cát, hệ thống tuần hoàn hạt cát và không khí sạch trong xưởng."
+      },
+      "1": {
+        "title": "Khắc chữ trên đá granite",
+        "desc": "Thực tế khắc chữ Phúc — Lộc — Thọ sắc nét, sâu và đều trên bề mặt đá granite."
+      },
+      "2": {
+        "title": "Máy phun cát tại xưởng sản xuất",
+        "desc": "Toàn cảnh máy phun cát Tâm Linh Huyền Bí — bố trí gọn, dễ vận hành cho xưởng đá và nội thất."
+      }
+    },
+    "applicationsTitle": "Ứng dụng thực tế",
+    "applicationsDesc": "Máy phun cát tuần hoàn không bụi phù hợp nhiều ngành nghề — từ khắc bia mộ đá, tranh đá mỹ nghệ đến chế tác nội thất gương kính.",
+    "applications": {
+      "0": "◆ Khắc bia mộ đá granite · chữ nổi 3D",
+      "1": "◇ Tranh đá · hoa văn mỹ nghệ trang trí",
+      "2": "✦ Gương kính nội thất · biển hiệu công ty"
+    },
+    "gallerySectionTitle": "Thư viện hình ảnh",
+    "gallerySectionDesc": "Hình ảnh máy phun cát và kết quả khắc thực tế tại xưởng. Bấm vào ảnh để xem phóng to.",
     "cta": "Liên hệ tư vấn",
     "viewMore": "Xem chi tiết máy phun cát"
   },

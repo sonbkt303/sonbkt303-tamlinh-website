@@ -1,7 +1,13 @@
 import { getTranslations } from "next-intl/server";
 import { siteConfig } from "@/lib/site-config";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { SandblasterHero, SandblasterDetails } from "@/components/sections/SandblasterDetail";
+import {
+  SandblasterContactCta,
+  SandblasterDetails,
+  SandblasterGallerySection,
+  SandblasterHero,
+  SandblasterYouTubeSection,
+} from "@/components/sections/SandblasterDetail";
 import { Button, ExternalButton } from "@/components/ui/Button";
 
 type MachineSectionProps = {
@@ -22,7 +28,22 @@ export async function MachineSection({ variant = "teaser" }: MachineSectionProps
         </section>
         <section className="section-padding bg-surface">
           <div className="container-main">
+            <SandblasterYouTubeSection />
+          </div>
+        </section>
+        <section className="section-padding bg-primary-dark">
+          <div className="container-main">
             <SandblasterDetails />
+          </div>
+        </section>
+        <section className="section-padding bg-surface">
+          <div className="container-main">
+            <SandblasterGallerySection />
+          </div>
+        </section>
+        <section className="section-padding gradient-primary">
+          <div className="container-main">
+            <SandblasterContactCta />
           </div>
         </section>
       </>
