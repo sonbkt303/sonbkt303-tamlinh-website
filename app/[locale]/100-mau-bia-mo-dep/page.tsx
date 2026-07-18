@@ -44,6 +44,7 @@ export default async function GalleryPage({
         page={pageNum}
         perPage={24}
         viewMoreHref="/100-mau-bia-mo-dep"
+        hideHeading
       />
     </>
   );

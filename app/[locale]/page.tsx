@@ -8,7 +8,6 @@ import { QualitySection } from "@/components/sections/QualitySection";
 import { TombstoneGallery } from "@/components/sections/TombstoneGallery";
 import { MachineSection } from "@/components/sections/MachineSection";
 import { NewsSection } from "@/components/sections/NewsSection";
-import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 
 type HomePageProps = {
   params: Promise<{ locale: Locale }>;
@@ -21,7 +20,6 @@ export default async function HomePage({ params }: HomePageProps) {
   const tHero = await getTranslations("hero");
   const tWelcome = await getTranslations("welcome");
   const tQuality = await getTranslations("quality");
-  const tTestimonials = await getTranslations("testimonials");
 
   const qualityFeatures = [
     tQuality("features.0"),
@@ -57,10 +55,6 @@ export default async function HomePage({ params }: HomePageProps) {
       />
       <TombstoneGallery />
       <NewsSection />
-      <TestimonialsSection
-        title={tTestimonials("title")}
-        subtitle={tTestimonials("subtitle")}
-      />
     </>
   );
 }

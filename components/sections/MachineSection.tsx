@@ -16,7 +16,7 @@ export async function MachineSection({ variant = "teaser" }: MachineSectionProps
   if (variant === "full") {
     return (
       <>
-        <section className="section-padding bg-primary-dark">
+        <section className="section-padding bg-gradient-to-b from-primary to-[#6b5840]">
           <div className="container-main">
             <SandblasterHero />
           </div>

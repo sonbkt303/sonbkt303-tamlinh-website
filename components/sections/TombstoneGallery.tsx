@@ -12,6 +12,7 @@ type TombstoneGalleryProps = {
   page?: number;
   perPage?: number;
   viewMoreHref?: "/san-pham/bia-mo" | "/100-mau-bia-mo-dep";
+  hideHeading?: boolean;
 };
 
 export async function TombstoneGallery({
@@ -21,6 +22,7 @@ export async function TombstoneGallery({
   page = 1,
   perPage = 24,
   viewMoreHref = "/san-pham/bia-mo",
+  hideHeading = false,
 }: TombstoneGalleryProps) {
   const t = await getTranslations("tombstoneGallery");
   const allProducts = getTombstonesByCategory(category);
@@ -37,10 +39,10 @@ export async function TombstoneGallery({
   }
 
   return (
-    <section className="section-padding bg-primary">
+    <section className={`section-padding bg-primary ${hideHeading ? "!pt-0" : ""}`}>
       <div className="container-main">
-        <SectionHeading title={t("title")} variant="primary" />
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {!hideHeading && <SectionHeading title={t("title")} variant="primary" />}
+        <div className={`grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 ${hideHeading ? "" : "mt-10"}`}>
           {products.map((product) => (
             <ProductCard key={product.slug} {...product} />
           ))}
