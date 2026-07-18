@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "title": "Tam Linh - Xưởng Khắc Bia Mộ & Máy Bắn Cát Uy Tín Hà Nội",
+    "description": "Xưởng khắc bia mộ & máy bắn cát uy tín tại Hà Nội. Bia mộ đá granite, chữ nổi 3D, men sứ, bia công giáo. Bảo hành 30 năm, giao hàng toàn quốc."
+  },
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Giới thiệu",
+    "products": "Sản phẩm",
+    "pricing": "Giá khắc bia mộ",
+    "gallery100": "100 mẫu bia mộ đẹp",
+    "news": "Tin tức",
+    "contact": "Liên hệ",
+    "sandblasters": "Máy bắn cát",
+    "tombstones": "Bia mộ",
+    "porcelainPlaque": "Bia men sứ",
+    "catholicPlaque": "Bia công giáo",
+    "familyTomb": "Bia lăng mộ",
+    "martyrPlaque": "Bia liệt sĩ",
+    "embossed3d": "Bia mộ chữ nổi 3D",
+    "beautifulModels": "Mẫu bia mộ đẹp",
+    "cabinetBlaster": "Máy bắn cát tủ",
+    "boxBlaster": "Máy bắn cát hộp",
+    "blasterAccessories": "Phụ kiện máy bắn cát"
+  },
+  "hero": {
+    "title": "100 Mẫu Bia Mộ Đẹp Trên Đá Granite",
+    "subtitle": "Tam Linh",
+    "slideAlt": "Khắc bia mộ Hà Nội"
+  },
+  "welcome": {
+    "title": "Tamlinh.com xin kính chào quý khách!",
+    "tagline": "Giá Trị Bền Vững Mai Sau - Trọn Đạo Hiếu Nghĩa Với Tổ Tiên!",
+    "quote": "Không có một con người hoàn hảo - Nhưng sẽ có những sản phẩm hoàn hảo, nó được tạo ra bởi con người mang những yếu tố hoàn hảo!",
+    "intro": "Tam Linh tự hào là xưởng chế tác và khắc bia mộ đá uy tín, chuyên nghiệp hàng đầu tại Hà Nội. Với đội ngũ thợ gia truyền lành nghề, có tâm và có tầm, chúng tôi chuyên cung cấp các sản phẩm bia mộ chất lượng cao, mang lại tính thẩm mỹ trang nghiêm và độ bền lâu dài."
+  },
+  "quality": {
+    "title": "Chất lượng sản phẩm",
+    "features": {
+      "0": "Vật liệu tốt nhất: Phôi đá granite tự nhiên nguyên khối nhập khẩu, bền vững không phai màu theo thời gian.",
+      "1": "Chữ, hoa văn được chạm khắc tỉ mỉ, tinh xảo, sâu và cực sắc nét.",
+      "2": "Ảnh men sứ nung 1200 độ C, cho ảnh trung thực, bền vĩnh cửu.",
+      "3": "Sơn bê tông 2K chuyên dụng bền màu, không bong tróc.",
+      "4": "Nghệ nhân gia truyền, lành nghề, chuyên sâu, có tâm, có tầm, uy tín, chuyên nghiệp."
+    },
+    "commitmentTitle": "Thể hiện trách nhiệm của mình với sản phẩm, chúng tôi cam kết:",
+    "commitment": "Không đẹp không lấy tiền - Nhận hàng kiểm tra chất lượng hài lòng mới thanh toán - Bảo hành 30 năm - đóng gói, vận chuyển tận nhà trên toàn quốc.",
+    "contactLine": "ĐC: {address}. Hotline - Zalo: {phones}",
+    "imageAlt": "Bia mộ đá granite cao cấp"
+  },
+  "tombstoneGallery": {
+    "title": "100+ Mẫu bia mộ đẹp",
+    "viewMore": "Xem thêm",
+    "contactPrice": "Liên hệ"
+  },
+  "machines": {
+    "title": "Máy bắn cát chuyên dụng",
+    "introTitle": "Giải pháp máy bắn cát cho xưởng khắc đá",
+    "features": {
+      "0": "Công suất ổn định, phù hợp khắc chữ nổi 3D trên đá granite.",
+      "1": "Thiết kế bền bỉ, vận hành liên tục trong môi trường xưởng.",
+      "2": "Bảo hành chính hãng, hỗ trợ kỹ thuật tận nơi.",
+      "3": "Tư vấn lắp đặt và đào tạo vận hành miễn phí."
+    },
+    "cta": "Liên hệ tư vấn",
+    "viewMore": "Xem thêm sản phẩm"
+  },
+  "news": {
+    "title": "Tin tức",
+    "viewMore": "Xem thêm"
+  },
+  "testimonials": {
+    "title": "Phản hồi của khách hàng",
+    "subtitle": "Mang giá trị lớn nhất của mình là lương tâm, kỹ năng nghề nghiệp để đổi lấy niềm tin của khách hàng."
+  },
+  "footer": {
+    "aboutTitle": "Giới thiệu",
+    "aboutText": "Bia Mộ Chữ nổi 3D, Bia Mộ Có Ảnh, Bia Mộ Không Ảnh, Bia Lăng Mộ, Bia Mộ Chữ Nho, Bia Công Đức, Khắc Đá Biển Hiệu Công Ty, Bia Mộ Công Giáo, Bia mộ Liệt Sĩ, Bia Quấn Thư Câu Đối",
+    "contactTitle": "Liên hệ",
+    "addressLabel": "Địa chỉ",
+    "factoryLabel": "Xưởng sản xuất",
+    "hotlineLabel": "Hotline",
+    "emailLabel": "Email",
+    "newsTitle": "Tin tức",
+    "fanpageTitle": "Fanpage",
+    "copyright": "Bản quyền thuộc về Tamlinh.com | Cung cấp bởi Tam Linh"
+  },
+  "floatingContact": {
+    "call": "Gọi ngay",
+    "zalo": "Chat Zalo"
+  },
+  "common": {
+    "readMore": "Đọc thêm",
+    "backHome": "Về trang chủ",
+    "comingSoon": "Nội dung đang được cập nhật. Vui lòng liên hệ hotline để được tư vấn trực tiếp."
+  },
+  "pages": {
+    "about": {
+      "title": "Giới thiệu",
+      "description": "Giới thiệu về xưởng khắc bia mộ và máy bắn cát Tam Linh tại Hà Nội."
+    },
+    "contact": {
+      "title": "Liên hệ",
+      "description": "Liên hệ xưởng khắc bia mộ Tam Linh - Hotline, Zalo, địa chỉ xưởng tại Hà Nội."
+    },
+    "tombstones": {
+      "title": "Sản phẩm bia mộ",
+      "description": "Danh mục bia mộ đá granite, chữ nổi 3D, men sứ, bia công giáo tại Tam Linh."
+    },
+    "sandblasters": {
+      "title": "Máy bắn cát",
+      "description": "Máy bắn cát tủ, hộp và phụ kiện chuyên dụng cho xưởng khắc đá."
+    },
+    "pricing": {
+      "title": "Giá khắc bia mộ",
+      "description": "Bảng giá khắc bia mộ đá granite tại xưởng Tam Linh Hà Nội."
+    },
+    "gallery": {
+      "title": "100 mẫu bia mộ đẹp",
+      "description": "Thư viện 100+ mẫu bia mộ đẹp trên đá granite tự nhiên."
+    },
+    "news": {
+      "title": "Tin tức",
+      "description": "Tin tức, kinh nghiệm và hướng dẫn về khắc bia mộ, máy bắn cát."
+    }
+  }
+}
