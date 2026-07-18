@@ -23,20 +23,20 @@ export function MobileMenu({ items }: MobileMenuProps) {
         type="button"
         aria-label="Toggle menu"
         onClick={() => setOpen((value) => !value)}
-        className="focus-ring rounded-md border border-white/30 px-3 py-2 text-white"
+        className="focus-ring rounded-md border border-accent/30 px-3 py-2 text-white"
       >
         {open ? "✕" : "☰"}
       </button>
 
       {open && (
-        <div className="absolute left-0 right-0 top-full z-50 max-h-[80vh] overflow-y-auto border-t border-white/10 bg-primary-dark shadow-xl">
+        <div className="absolute left-0 right-0 top-full z-50 max-h-[80vh] overflow-y-auto border-t border-accent/20 bg-primary-dark shadow-xl">
           <ul className="px-4 py-4">
             {items.map((item) => {
               const hasChildren = Boolean(item.children?.length);
 
               if (hasChildren) {
                 return (
-                  <li key={item.key} className="border-b border-white/10 py-2">
+                  <li key={item.key} className="border-b border-accent/15 py-2">
                     <button
                       type="button"
                       className={`${mobileLinkClass} flex w-full items-center justify-between`}
@@ -62,7 +62,7 @@ export function MobileMenu({ items }: MobileMenuProps) {
                             </li>
                           ) : (
                             <li key={child.key}>
-                              <p className="mb-1 text-sm font-semibold text-accent">
+                              <p className="mb-1 text-sm font-semibold text-accent-soft">
                                 {t(child.key)}
                               </p>
                               <ul className="space-y-1 pl-2">
@@ -95,7 +95,7 @@ export function MobileMenu({ items }: MobileMenuProps) {
 
               if (item.href) {
                 return (
-                  <li key={item.key} className="border-b border-white/10">
+                  <li key={item.key} className="border-b border-accent/15">
                     <Link
                       href={item.href as "/"}
                       onClick={() => setOpen(false)}

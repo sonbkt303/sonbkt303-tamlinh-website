@@ -5,12 +5,12 @@ import { MobileMenu } from "./MobileMenu";
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 bg-primary-dark shadow-sm">
+    <header className="sticky top-0 z-40 border-b border-accent/25 bg-primary-dark shadow-sm">
       <div className="container-main flex h-[4.5rem] items-center justify-between gap-4 px-4 lg:px-6">
         <Link href="/" className="focus-ring shrink-0 rounded-sm py-1">
           <span className="flex items-baseline gap-px font-serif text-base tracking-wide lg:text-lg">
             <span className="font-medium text-white">tamlinhhuyenbi</span>
-            <span className="text-sm font-light text-accent-soft lg:text-base">.com</span>
+            <span className="text-sm font-light text-accent lg:text-base">.com</span>
           </span>
         </Link>
 

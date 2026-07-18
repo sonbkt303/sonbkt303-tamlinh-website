@@ -27,7 +27,7 @@ function BulletList({
 
 function ContentCard({ title, items }: { title: string; items: string[] }) {
   return (
-    <div className="rounded-xl border border-primary/10 bg-white p-6 shadow-sm">
+    <div className="surface-classic p-6">
       <h3 className="mb-4 border-b border-primary/10 pb-3 text-base font-semibold leading-snug text-text-dark md:text-lg">
         {title}
       </h3>
@@ -81,10 +81,10 @@ export async function SandblasterHero() {
 
       <div className="order-2 space-y-6">
         <div>
-          <h1 className="text-2xl font-bold text-white md:text-3xl lg:text-4xl">
+          <h1 className="heading-classic text-2xl text-white md:text-3xl lg:text-4xl">
             {tPage("title")}
           </h1>
-          <div className="mt-3 h-0.5 w-16 bg-accent-soft" />
+          <div className="ornament-divider ornament-divider-accent-soft" />
         </div>
         <div className="space-y-4 rounded-xl border border-white/10 bg-black/25 p-5">
           <p className="prose-on-dark font-medium">{tPage("description")}</p>
@@ -122,7 +122,7 @@ export async function SandblasterDetails() {
         <ContentCard title={t("commitmentTitle")} items={commitment} />
       </div>
 
-      <div className="rounded-xl bg-surface-muted px-6 py-8 text-center">
+      <div className="surface-classic px-6 py-8 text-center">
         <p className="prose-body">{t("contactTitle")}</p>
         <p className="mt-4 text-lg font-semibold text-primary-dark">
           Hotline:{" "}

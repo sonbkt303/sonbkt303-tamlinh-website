@@ -31,11 +31,12 @@ export default async function GalleryPage({
 
   return (
     <>
-      <section className="section-padding bg-primary text-white">
+      <section className="section-padding gradient-primary text-white">
         <div className="container-main max-w-4xl text-center">
-          <h1 className="text-3xl font-bold uppercase text-accent-soft md:text-4xl">
+          <h1 className="heading-classic text-3xl text-accent-soft md:text-4xl">
             {t("title")}
           </h1>
+          <div className="ornament-divider ornament-divider-accent-soft" />
           <p className="prose-body mt-6 text-white/90 md:text-lg">{t("description")}</p>
         </div>
       </section>

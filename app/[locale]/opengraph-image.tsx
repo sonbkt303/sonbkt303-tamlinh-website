@@ -19,7 +19,7 @@ export default async function Image() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "#a38a5d",
+          background: "#2A2118",
           color: "#ffffff",
           fontSize: 48,
           fontWeight: 700,
@@ -27,7 +27,7 @@ export default async function Image() {
           padding: 48,
         }}
       >
-        <div style={{ fontSize: 32, color: "#f7d749", marginBottom: 24 }}>
+        <div style={{ fontSize: 32, color: "#A67C3D", marginBottom: 24 }}>
           {siteConfig.domain}
         </div>
         {title}

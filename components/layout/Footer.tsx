@@ -8,15 +8,15 @@ export async function Footer() {
   const latestNews = newsItems.slice(0, 3);
 
   return (
-    <footer className="bg-primary-dark text-white">
+    <footer className="border-t border-accent/20 bg-primary-dark text-white">
       <div className="container-main grid gap-10 px-4 py-12 md:grid-cols-3 lg:px-6">
         <div>
-          <h2 className="mb-4 text-base font-semibold text-accent">{t("aboutTitle")}</h2>
+          <h2 className="mb-4 text-base font-semibold text-accent-soft">{t("aboutTitle")}</h2>
           <p className="text-base leading-7 text-white/85">{t("aboutText")}</p>
         </div>
 
         <div>
-          <h2 className="mb-4 text-base font-semibold text-accent">{t("contactTitle")}</h2>
+          <h2 className="mb-4 text-base font-semibold text-accent-soft">{t("contactTitle")}</h2>
           <ul className="space-y-2 text-base leading-7 text-white/85">
             <li>
               <strong>{t("addressLabel")}:</strong> {siteConfig.address}
@@ -37,7 +37,7 @@ export async function Footer() {
         </div>
 
         <div>
-          <h2 className="mb-4 text-base font-semibold text-accent">{t("newsTitle")}</h2>
+          <h2 className="mb-4 text-base font-semibold text-accent-soft">{t("newsTitle")}</h2>
           <ul className="space-y-3">
             {latestNews.map((item) => (
               <li key={item.slug}>
@@ -53,7 +53,7 @@ export async function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 py-4 text-center text-sm text-white/70">
+      <div className="border-t border-accent/15 py-4 text-center text-sm text-white/70">
         {t("copyright")}
       </div>
     </footer>

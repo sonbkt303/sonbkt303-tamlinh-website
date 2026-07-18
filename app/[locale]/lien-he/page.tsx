@@ -36,15 +36,15 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
   return (
     <>
-      <section className="section-padding bg-gradient-to-b from-primary to-[#6b5840] text-white">
+      <section className="section-padding gradient-primary text-white">
         <div className="container-main max-w-3xl text-center">
-          <p className="text-sm font-medium uppercase tracking-widest text-accent-soft">
+          <p className="text-sm font-medium tracking-widest text-accent-soft">
             {siteConfig.name}
           </p>
-          <h1 className="mt-3 font-serif text-3xl font-bold text-white md:text-4xl">
+          <h1 className="heading-classic mt-3 text-3xl text-white md:text-4xl">
             {t("title")}
           </h1>
-          <div className="mx-auto mt-3 h-0.5 w-16 bg-accent-soft" />
+          <div className="ornament-divider ornament-divider-accent-soft" />
           <p className="prose-on-dark mx-auto mt-6 max-w-2xl">{t("description")}</p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <ExternalButton href={`tel:${phoneHref}`} variant="phone" size="md">
@@ -75,7 +75,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
         <section className="section-padding bg-surface-muted">
           <div className="container-main max-w-5xl">
             <SectionHeading title={tAbout("title")} variant="light" />
-            <div className="mt-10 rounded-xl border border-primary/10 bg-white p-6 shadow-sm md:p-10">
+            <div className="surface-classic mt-10 p-6 md:p-10">
               <MarkdownContent source={aboutContent.markdown} className="prose-contact" />
             </div>
           </div>

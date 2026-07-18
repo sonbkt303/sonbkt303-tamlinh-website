@@ -50,7 +50,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang="vi-VN" className={`${roboto.variable} ${playfair.variable} h-full`}>
-      <body className="min-h-full bg-white antialiased">
+      <body className="min-h-full bg-background antialiased">
         <NextIntlClientProvider messages={messages}>
           <Header />
           <main className="flex-1">{children}</main>

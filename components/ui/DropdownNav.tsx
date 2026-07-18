@@ -38,7 +38,7 @@ export function DropdownNav({ items }: DropdownNavProps) {
                 <span aria-hidden>▾</span>
               </button>
               {openKey === item.key && (
-                <div className="absolute left-0 top-full z-50 min-w-[240px] rounded-lg border border-white/10 bg-primary-dark py-2 shadow-xl">
+                <div className="absolute left-0 top-full z-50 min-w-[240px] rounded-lg border border-accent/20 bg-primary-dark py-2 shadow-xl">
                   <ul className="space-y-1 px-2">
                     {item.children?.map((child) => (
                       <li key={child.key}>
@@ -51,7 +51,7 @@ export function DropdownNav({ items }: DropdownNavProps) {
                           </Link>
                         ) : (
                           <div className="px-3 py-2">
-                            <p className="mb-2 text-sm font-semibold text-accent">
+                            <p className="mb-2 text-sm font-semibold text-accent-soft">
                               {t(child.key)}
                             </p>
                             <ul className="space-y-1">

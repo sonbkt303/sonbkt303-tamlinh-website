@@ -36,7 +36,7 @@ export function QualitySection({
           <p className="prose-body mt-4 text-text-dark">{contactLine}</p>
         </div>
 
-        <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-lg">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-lg ring-1 ring-accent/20">
           <Image
             src={qualityImage}
             alt={imageAlt}

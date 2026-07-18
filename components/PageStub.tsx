@@ -16,11 +16,12 @@ export async function PageStub({ params, pageKey, children }: PageStubProps) {
   const tCommon = await getTranslations("common");
 
   return (
-    <section className="section-padding bg-primary">
+    <section className="section-padding gradient-primary">
       <div className="container-main max-w-4xl text-center text-white">
-        <h1 className="text-3xl font-bold uppercase text-accent-soft md:text-4xl">
+        <h1 className="heading-classic text-3xl text-accent-soft md:text-4xl">
           {tPage("title")}
         </h1>
+        <div className="ornament-divider ornament-divider-accent-soft" />
         <p className="prose-body mt-6 text-white/90 md:text-lg">{tPage("description")}</p>
         <p className="mt-4 text-base text-white/70">{tCommon("comingSoon")}</p>
         {children}

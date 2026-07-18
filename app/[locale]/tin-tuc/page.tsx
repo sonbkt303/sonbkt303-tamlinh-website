@@ -30,9 +30,10 @@ export default async function NewsListPage({ params }: NewsListPageProps) {
   return (
     <section className="section-padding bg-surface">
       <div className="container-main">
-        <h1 className="text-center text-3xl font-bold uppercase text-primary-dark md:text-4xl">
+        <h1 className="heading-classic text-center text-3xl text-primary-dark md:text-4xl">
           {t("title")}
         </h1>
+        <div className="ornament-divider" />
         <p className="prose-body mx-auto mt-4 max-w-2xl text-center">{t("description")}</p>
 
         <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">

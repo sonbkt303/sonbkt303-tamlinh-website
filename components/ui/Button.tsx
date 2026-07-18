@@ -8,7 +8,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary:
     "bg-primary text-white hover:bg-primary-dark",
   accent:
-    "bg-accent text-accent-foreground hover:brightness-110",
+    "border border-accent/40 bg-accent text-accent-foreground hover:brightness-95",
   phone:
     "bg-cta-phone text-white hover:brightness-110",
   outline:
@@ -40,7 +40,7 @@ type ButtonAsLink = ButtonBaseProps & {
 type ButtonProps = ButtonAsButton | ButtonAsLink;
 
 const baseClasses =
-  "focus-ring inline-flex items-center justify-center rounded-lg font-semibold transition";
+  "focus-ring inline-flex items-center justify-center rounded-md font-semibold transition";
 
 export function Button({
   variant = "primary",

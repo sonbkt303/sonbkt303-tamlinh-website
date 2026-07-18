@@ -17,19 +17,19 @@ type ContactCardProps = {
 
 const accentStyles = {
   phone: {
-    card: "border-cta-phone/15 bg-red-50/50 hover:border-cta-phone/25",
+    card: "border border-cta-phone/15 bg-red-50/50 hover:border-cta-phone/25",
     icon: "bg-cta-phone/10 text-cta-phone",
     value: "text-cta-phone",
     arrow: "text-cta-phone/40 group-hover:text-cta-phone",
   },
   zalo: {
-    card: "border-cta-zalo/15 bg-blue-50/50 hover:border-cta-zalo/25",
+    card: "border border-cta-zalo/15 bg-blue-50/50 hover:border-cta-zalo/25",
     icon: "bg-cta-zalo/10 text-cta-zalo",
     value: "text-cta-zalo",
     arrow: "text-cta-zalo/40 group-hover:text-cta-zalo",
   },
   default: {
-    card: "border-primary/10 bg-white hover:border-primary/20",
+    card: "surface-classic border-primary/12 hover:border-primary/20",
     icon: "bg-primary/10 text-primary",
     value: "text-text-dark group-hover:text-primary",
     arrow: "text-primary/30 group-hover:text-primary",
@@ -161,8 +161,8 @@ function ContactCard({
     </>
   );
 
-  const className = cn(
-    "group flex items-center gap-4 rounded-xl border p-4 shadow-sm transition hover:shadow-md md:p-5",
+  const cardClassName = cn(
+    "group flex items-center gap-4 rounded-md p-4 transition hover:shadow-md md:p-5",
     wide && "sm:col-span-2",
     styles.card,
     href && "focus-ring",
@@ -172,7 +172,7 @@ function ContactCard({
     return (
       <a
         href={href}
-        className={className}
+        className={cardClassName}
         {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
       >
         {content}
@@ -180,7 +180,7 @@ function ContactCard({
     );
   }
 
-  return <div className={className}>{content}</div>;
+  return <div className={cardClassName}>{content}</div>;
 }
 
 export async function ContactInfo({ className = "" }: ContactInfoProps) {

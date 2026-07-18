@@ -39,7 +39,7 @@ export async function TombstoneGallery({
   }
 
   return (
-    <section className={`section-padding bg-primary ${hideHeading ? "!pt-0" : ""}`}>
+    <section className={`section-padding bg-primary-dark ${hideHeading ? "!pt-0" : ""}`}>
       <div className="container-main">
         {!hideHeading && <SectionHeading title={t("title")} variant="primary" />}
         <div className={`grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 ${hideHeading ? "" : "mt-10"}`}>

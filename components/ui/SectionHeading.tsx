@@ -13,10 +13,10 @@ const titleVariants = {
   primary: "text-accent-soft",
 };
 
-const underlineVariants = {
-  light: "bg-accent",
-  dark: "bg-accent",
-  primary: "bg-accent-soft",
+const dividerVariants = {
+  light: "",
+  dark: "",
+  primary: "ornament-divider-accent-soft",
 };
 
 export function SectionHeading({
@@ -29,13 +29,13 @@ export function SectionHeading({
     <div className={cn("text-center", className)}>
       <Tag
         className={cn(
-          "text-2xl font-bold uppercase tracking-wide md:text-3xl",
+          "heading-classic text-2xl md:text-3xl",
           titleVariants[variant],
         )}
       >
         {title}
       </Tag>
-      <div className={cn("mx-auto mt-3 h-0.5 w-16", underlineVariants[variant])} />
+      <div className={cn("ornament-divider", dividerVariants[variant])} />
     </div>
   );
 }
