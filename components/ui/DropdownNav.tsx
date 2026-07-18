@@ -14,7 +14,7 @@ export function DropdownNav({ items }: DropdownNavProps) {
   const [openKey, setOpenKey] = useState<string | null>(null);
 
   return (
-    <ul className="hidden items-center gap-1 xl:flex">
+    <ul className="hidden items-center gap-0.5 xl:flex">
       {items.map((item) => {
         const hasChildren = Boolean(item.children?.length);
         const label = t(item.key);
@@ -29,7 +29,7 @@ export function DropdownNav({ items }: DropdownNavProps) {
             >
               <button
                 type="button"
-                className="flex items-center gap-1 px-2 py-4 text-xs font-semibold uppercase tracking-wide text-white transition hover:text-accent"
+                className="flex items-center gap-1 whitespace-nowrap px-2 py-3 text-xs font-semibold uppercase tracking-wide text-white transition hover:text-accent"
               >
                 {label}
                 <span aria-hidden>▾</span>
@@ -78,7 +78,7 @@ export function DropdownNav({ items }: DropdownNavProps) {
                       el?.scrollIntoView({ behavior: "smooth" });
                     } }
                   : {})}
-                className="block px-2 py-4 text-xs font-semibold uppercase tracking-wide text-white transition hover:text-accent"
+                className="block whitespace-nowrap px-2 py-3 text-xs font-semibold uppercase tracking-wide text-white transition hover:text-accent"
               >
                 {label}
               </Link>

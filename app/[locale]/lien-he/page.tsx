@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getPageMetadata } from "@/lib/seo";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { crawledPageContent } from "@/lib/data/crawled";
-import { siteConfig } from "@/lib/site-config";
+import { ContactInfo } from "@/components/ui/ContactInfo";
 import { Link } from "@/lib/i18n/routing";
 
 type ContactPageProps = {
@@ -25,7 +25,6 @@ export default async function ContactPage({ params }: ContactPageProps) {
   setRequestLocale(locale);
 
   const t = await getTranslations("pages.contact");
-  const tFooter = await getTranslations("footer");
   const tCommon = await getTranslations("common");
   const content = crawledPageContent.contact;
 
@@ -39,29 +38,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
           {t("description")}
         </p>
 
-        <div className="mt-10 rounded-lg border border-gray-200 bg-gray-50 p-8">
-          <ul className="space-y-4 text-gray-700">
-            <li>
-              <strong>{tFooter("addressLabel")}:</strong> {siteConfig.address}
-            </li>
-            <li>
-              <strong>{tFooter("factoryLabel")}:</strong> {siteConfig.factory}
-            </li>
-            <li>
-              <strong>{tFooter("hotlineLabel")}:</strong>{" "}
-              {siteConfig.phone.join(" - ")}
-            </li>
-            <li>
-              <strong>{tFooter("emailLabel")}:</strong>{" "}
-              <a href={`mailto:${siteConfig.email}`} className="text-primary hover:underline">
-                {siteConfig.email}
-              </a>
-            </li>
-            <li>
-              <strong>Zalo:</strong> {siteConfig.zalo}
-            </li>
-          </ul>
-        </div>
+        <ContactInfo className="mt-10" />
 
         {content?.markdown && (
           <div className="mt-8">

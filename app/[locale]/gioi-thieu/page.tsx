@@ -2,6 +2,7 @@ import type { Locale } from "@/lib/i18n/routing";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { getPageMetadata } from "@/lib/seo";
 import { MarkdownContent } from "@/components/MarkdownContent";
+import { ContactInfo } from "@/components/ui/ContactInfo";
 import { crawledPageContent } from "@/lib/data/crawled";
 import { Link } from "@/lib/i18n/routing";
 
@@ -36,6 +37,7 @@ export default async function AboutPage({ params }: AboutPageProps) {
         <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
           {t("description")}
         </p>
+        <ContactInfo className="mt-10" />
         <div className="mt-10">
           <MarkdownContent source={content?.markdown ?? t("description")} />
         </div>

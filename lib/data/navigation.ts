@@ -36,7 +36,6 @@ export const mainNavigation: NavItem[] = [
   },
   { key: "pricing", href: "/gia-khac-bia-mo" },
   { key: "gallery100", href: "/100-mau-bia-mo-dep" },
-  { key: "sandblasters", href: "/san-pham/may-ban-cat", anchor: "may-ban-cat" },
   { key: "news", href: "/tin-tuc" },
   { key: "contact", href: "/lien-he" },
 ];
