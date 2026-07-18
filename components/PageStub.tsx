@@ -22,7 +22,7 @@ export async function PageStub({ params, pageKey, children }: PageStubProps) {
           {tPage("title")}
         </h1>
         <div className="ornament-divider ornament-divider-accent-soft" />
-        <p className="prose-body mt-6 text-white/90 md:text-lg">{tPage("description")}</p>
+        <p className="prose-on-dark mx-auto mt-6 max-w-2xl">{tPage("description")}</p>
         <p className="mt-4 text-base text-white/70">{tCommon("comingSoon")}</p>
         {children}
         <Button href="/" variant="accent" className="mt-8">

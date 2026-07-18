@@ -37,7 +37,7 @@ export default async function GalleryPage({
             {t("title")}
           </h1>
           <div className="ornament-divider ornament-divider-accent-soft" />
-          <p className="prose-body mt-6 text-white/90 md:text-lg">{t("description")}</p>
+          <p className="prose-on-dark mx-auto mt-6 max-w-2xl">{t("description")}</p>
         </div>
       </section>
       <TombstoneGallery
