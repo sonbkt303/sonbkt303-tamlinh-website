@@ -12,7 +12,6 @@ export const pathMap: Record<string, string> = {
   home: "/",
   tombstones: "/san-pham/bia-mo",
   sandblasters: "/may-ban-cat",
-  pricing: "/gia-khac-bia-mo",
   gallery: "/100-mau-bia-mo-dep",
   news: "/tin-tuc",
   contact: "/lien-he",

@@ -10,7 +10,6 @@ export const routing = defineRouting({
     "/": "/",
     "/san-pham/bia-mo": "/san-pham/bia-mo",
     "/may-ban-cat": "/may-ban-cat",
-    "/gia-khac-bia-mo": "/gia-khac-bia-mo",
     "/100-mau-bia-mo-dep": "/100-mau-bia-mo-dep",
     "/tin-tuc": "/tin-tuc",
     "/tin-tuc/[slug]": "/tin-tuc/[slug]",

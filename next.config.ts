@@ -38,7 +38,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/en/tombstone-pricing",
-        destination: "/gia-khac-bia-mo",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/gia-khac-bia-mo",
+        destination: "/",
         permanent: true,
       },
       {
