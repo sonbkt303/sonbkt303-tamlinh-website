@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
-import { Roboto, Playfair_Display } from "next/font/google";
+import { Cormorant_Garamond, Lora } from "next/font/google";
 import { routing } from "@/lib/i18n/routing";
 import { getDefaultMetadata } from "@/lib/seo";
 import { getLocalBusinessJsonLd, getWebsiteJsonLd } from "@/lib/json-ld";
@@ -10,16 +10,16 @@ import { Footer } from "@/components/layout/Footer";
 import { FloatingContact } from "@/components/layout/FloatingContact";
 import "../globals.css";
 
-const roboto = Roboto({
+const lora = Lora({
   subsets: ["latin", "vietnamese"],
-  variable: "--font-roboto",
-  weight: ["400", "500", "700"],
+  variable: "--font-lora",
+  weight: ["400", "500", "600", "700"],
 });
 
-const playfair = Playfair_Display({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin", "vietnamese"],
-  variable: "--font-playfair",
-  weight: ["400", "600", "700"],
+  variable: "--font-cormorant",
+  weight: ["500", "600", "700"],
 });
 
 export function generateStaticParams() {
@@ -49,7 +49,7 @@ export default async function LocaleLayout({
   const websiteJsonLd = getWebsiteJsonLd();
 
   return (
-    <html lang="vi-VN" className={`${roboto.variable} ${playfair.variable} h-full`}>
+    <html lang="vi-VN" className={`${lora.variable} ${cormorant.variable} h-full`}>
       <body className="min-h-full bg-background antialiased">
         <NextIntlClientProvider messages={messages}>
           <Header />
