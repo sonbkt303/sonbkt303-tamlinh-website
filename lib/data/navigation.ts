@@ -10,19 +10,14 @@ export type NavItem = {
 export const mainNavigation: NavItem[] = [
   { key: "home", href: "/" },
   {
-    key: "products",
+    key: "tombstones",
     children: [
-      {
-        key: "tombstones",
-        children: [
-          { key: "porcelainPlaque", href: "/san-pham/bia-mo" },
-          { key: "catholicPlaque", href: "/san-pham/bia-mo" },
-          { key: "familyTomb", href: "/san-pham/bia-mo" },
-          { key: "martyrPlaque", href: "/san-pham/bia-mo" },
-          { key: "embossed3d", href: "/san-pham/bia-mo" },
-          { key: "beautifulModels", href: "/100-mau-bia-mo-dep" },
-        ],
-      },
+      { key: "porcelainPlaque", href: "/san-pham/bia-mo" },
+      { key: "catholicPlaque", href: "/san-pham/bia-mo" },
+      { key: "familyTomb", href: "/san-pham/bia-mo" },
+      { key: "martyrPlaque", href: "/san-pham/bia-mo" },
+      { key: "embossed3d", href: "/san-pham/bia-mo" },
+      { key: "beautifulModels", href: "/100-mau-bia-mo-dep" },
     ],
   },
   { key: "sandblasters", href: "/may-ban-cat" },

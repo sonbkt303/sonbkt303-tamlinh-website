@@ -53,6 +53,7 @@ export default async function HomePage({ params }: HomePageProps) {
         quote={tWelcome("quote")}
         intro={tWelcome("intro")}
       />
+      <MachineSection />
       <QualitySection
         title={tQuality("title")}
         features={qualityFeatures}
@@ -62,7 +63,6 @@ export default async function HomePage({ params }: HomePageProps) {
         imageAlt={tQuality("imageAlt")}
       />
       <TombstoneGallery />
-      <MachineSection />
       <NewsSection />
       <TestimonialsSection
         title={tTestimonials("title")}

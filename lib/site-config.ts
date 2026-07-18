@@ -5,8 +5,8 @@ export const siteConfig = {
   phone: ["0987 595 794"],
   zalo: "0987595794",
   email: "thanhninh1969@gmail.com",
-  address: "Ngã 3 Đống năm, Nam Đông Hưng, Tỉnh Hưng Yên",
-  factory: "Ngã 3 Đống năm, Nam Đông Hưng, Tỉnh Hưng Yên",
+  address: "Ngã 3 Đống năm, Nam Đông Hưng, Tỉnh Hưng Yên (Thái Bình cũ)",
+  factory: "Ngã 3 Đống năm, Nam Đông Hưng, Tỉnh Hưng Yên (Thái Bình cũ)",
   social: {
     facebook: "#",
     youtube: "#",

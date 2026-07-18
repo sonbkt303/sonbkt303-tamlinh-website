@@ -45,34 +45,46 @@ export function MobileMenu({ items }: MobileMenuProps) {
                       <span>{expanded === item.key ? "▴" : "▾"}</span>
                     </button>
                     {expanded === item.key && (
-                      <div className="space-y-3 pb-2 pl-3">
-                        {item.children?.map((child) => (
-                          <div key={child.key}>
-                            <p className="mb-1 text-xs font-bold uppercase text-accent">
-                              {t(child.key)}
-                            </p>
-                            <ul className="space-y-1">
-                              {child.children?.map((sub) => (
-                                <li key={sub.key}>
-                                  {sub.href ? (
-                                    <Link
-                                      href={sub.href as "/"}
-                                      onClick={() => setOpen(false)}
-                                      className="block py-1 text-sm text-white/90"
-                                    >
-                                      {t(sub.key)}
-                                    </Link>
-                                  ) : (
-                                    <span className="block py-1 text-sm text-white/90">
-                                      {t(sub.key)}
-                                    </span>
-                                  )}
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        ))}
-                      </div>
+                      <ul className="space-y-1 pb-2 pl-3">
+                        {item.children?.map((child) =>
+                          child.href ? (
+                            <li key={child.key}>
+                              <Link
+                                href={child.href as "/"}
+                                onClick={() => setOpen(false)}
+                                className="block py-1 text-sm text-white/90"
+                              >
+                                {t(child.key)}
+                              </Link>
+                            </li>
+                          ) : (
+                            <li key={child.key}>
+                              <p className="mb-1 text-xs font-bold uppercase text-accent">
+                                {t(child.key)}
+                              </p>
+                              <ul className="space-y-1 pl-2">
+                                {child.children?.map((sub) => (
+                                  <li key={sub.key}>
+                                    {sub.href ? (
+                                      <Link
+                                        href={sub.href as "/"}
+                                        onClick={() => setOpen(false)}
+                                        className="block py-1 text-sm text-white/90"
+                                      >
+                                        {t(sub.key)}
+                                      </Link>
+                                    ) : (
+                                      <span className="block py-1 text-sm text-white/90">
+                                        {t(sub.key)}
+                                      </span>
+                                    )}
+                                  </li>
+                                ))}
+                              </ul>
+                            </li>
+                          ),
+                        )}
+                      </ul>
                     )}
                   </li>
                 );
