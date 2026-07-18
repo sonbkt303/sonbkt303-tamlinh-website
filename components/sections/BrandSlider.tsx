@@ -16,7 +16,7 @@ export function BrandSlider() {
         {[...items, ...items].map((item, index) => (
           <span
             key={`${item}-${index}`}
-            className="text-sm font-bold uppercase tracking-wide text-white/90 md:text-base"
+            className="text-sm font-semibold tracking-wide text-white/90 md:text-base"
           >
             {tickerText}
           </span>

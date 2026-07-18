@@ -9,6 +9,9 @@ type MobileMenuProps = {
   items: NavItem[];
 };
 
+const mobileLinkClass =
+  "focus-ring block rounded-md py-2 text-sm font-medium text-white transition hover:text-accent";
+
 export function MobileMenu({ items }: MobileMenuProps) {
   const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
@@ -20,7 +23,7 @@ export function MobileMenu({ items }: MobileMenuProps) {
         type="button"
         aria-label="Toggle menu"
         onClick={() => setOpen((value) => !value)}
-        className="rounded border border-white/30 px-3 py-2 text-white"
+        className="focus-ring rounded-md border border-white/30 px-3 py-2 text-white"
       >
         {open ? "✕" : "☰"}
       </button>
@@ -36,7 +39,7 @@ export function MobileMenu({ items }: MobileMenuProps) {
                   <li key={item.key} className="border-b border-white/10 py-2">
                     <button
                       type="button"
-                      className="flex w-full items-center justify-between py-2 text-sm font-semibold uppercase text-white"
+                      className={`${mobileLinkClass} flex w-full items-center justify-between`}
                       onClick={() =>
                         setExpanded(expanded === item.key ? null : item.key)
                       }
@@ -52,14 +55,14 @@ export function MobileMenu({ items }: MobileMenuProps) {
                               <Link
                                 href={child.href as "/"}
                                 onClick={() => setOpen(false)}
-                                className="block py-1 text-sm text-white/90"
+                                className="focus-ring block rounded-md py-1.5 text-sm text-white/90 hover:text-accent"
                               >
                                 {t(child.key)}
                               </Link>
                             </li>
                           ) : (
                             <li key={child.key}>
-                              <p className="mb-1 text-xs font-bold uppercase text-accent">
+                              <p className="mb-1 text-sm font-semibold text-accent">
                                 {t(child.key)}
                               </p>
                               <ul className="space-y-1 pl-2">
@@ -69,12 +72,12 @@ export function MobileMenu({ items }: MobileMenuProps) {
                                       <Link
                                         href={sub.href as "/"}
                                         onClick={() => setOpen(false)}
-                                        className="block py-1 text-sm text-white/90"
+                                        className="focus-ring block rounded-md py-1.5 text-sm text-white/90 hover:text-accent"
                                       >
                                         {t(sub.key)}
                                       </Link>
                                     ) : (
-                                      <span className="block py-1 text-sm text-white/90">
+                                      <span className="block py-1.5 text-sm text-white/90">
                                         {t(sub.key)}
                                       </span>
                                     )}
@@ -96,7 +99,7 @@ export function MobileMenu({ items }: MobileMenuProps) {
                     <Link
                       href={item.href as "/"}
                       onClick={() => setOpen(false)}
-                      className="block py-3 text-sm font-semibold uppercase text-white"
+                      className={`${mobileLinkClass} py-3`}
                     >
                       {t(item.key)}
                     </Link>

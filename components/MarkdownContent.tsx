@@ -7,7 +7,7 @@ type MarkdownContentProps = {
 
 export function MarkdownContent({ source, className = "" }: MarkdownContentProps) {
   return (
-    <div className={`prose prose-lg max-w-none text-gray-700 ${className}`}>
+    <div className={`prose prose-lg max-w-none text-text-muted ${className}`}>
       <MDXRemote source={source} />
     </div>
   );

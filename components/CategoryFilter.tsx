@@ -7,13 +7,13 @@ type CategoryFilterProps = {
 
 export function CategoryFilter({ activeCategory }: CategoryFilterProps) {
   return (
-    <div className="mx-auto flex max-w-7xl flex-wrap justify-center gap-2 px-4 py-6 lg:px-6">
+    <div className="container-main flex flex-wrap justify-center gap-2 px-4 py-6 lg:px-6">
       <Link
         href="/san-pham/bia-mo"
-        className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
+        className={`focus-ring rounded-full px-4 py-2 text-sm font-semibold transition ${
           !activeCategory
             ? "bg-primary text-white"
-            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+            : "bg-surface-muted text-text-muted hover:bg-surface"
         }`}
       >
         Tất cả
@@ -25,10 +25,10 @@ export function CategoryFilter({ activeCategory }: CategoryFilterProps) {
             pathname: "/san-pham/bia-mo",
             query: { category: category.slug },
           }}
-          className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
+          className={`focus-ring rounded-full px-4 py-2 text-sm font-semibold transition ${
             activeCategory === category.slug
               ? "bg-primary text-white"
-              : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+              : "bg-surface-muted text-text-muted hover:bg-surface"
           }`}
         >
           {category.label}

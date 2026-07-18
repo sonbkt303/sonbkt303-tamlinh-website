@@ -3,6 +3,7 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/lib/i18n/routing";
 import { newsItems } from "@/lib/data/news";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
 
 type NewsSectionProps = {
   limit?: number;
@@ -21,19 +22,15 @@ export async function NewsSection({ limit = 12 }: NewsSectionProps) {
   const items = newsItems.slice(0, limit);
 
   return (
-    <section className="bg-white px-4 py-16">
-      <div className="mx-auto max-w-7xl lg:px-6">
-        <SectionHeading
-          title={t("title")}
-          variant="gold"
-          className="[&_h2]:text-primary-dark [&_div]:bg-primary-dark"
-        />
+    <section className="section-padding bg-surface-muted">
+      <div className="container-main">
+        <SectionHeading title={t("title")} variant="light" />
 
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {items.map((item) => (
             <article
               key={item.slug}
-              className="overflow-hidden border border-gray-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+              className="overflow-hidden rounded-xl border border-primary/10 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
               <div className="relative aspect-[3/2]">
                 <Image
@@ -45,13 +42,11 @@ export async function NewsSection({ limit = 12 }: NewsSectionProps) {
                 />
               </div>
               <div className="p-4">
-                <time className="text-xs text-gray-500">
-                  {formatDate(item.date)}
-                </time>
-                <h3 className="mt-2 min-h-[3rem] text-sm font-semibold leading-snug text-text-dark">
+                <time className="text-sm text-text-muted">{formatDate(item.date)}</time>
+                <h3 className="mt-2 line-clamp-2 text-base font-semibold leading-snug text-text-dark">
                   <Link
                     href={{ pathname: "/tin-tuc/[slug]", params: { slug: item.slug } }}
-                    className="transition hover:text-primary"
+                    className="focus-ring rounded transition hover:text-primary"
                   >
                     {item.title}
                   </Link>
@@ -62,12 +57,9 @@ export async function NewsSection({ limit = 12 }: NewsSectionProps) {
         </div>
 
         <div className="mt-10 text-center">
-          <Link
-            href="/tin-tuc"
-            className="inline-block rounded bg-primary px-8 py-3 text-sm font-bold uppercase text-white transition hover:bg-primary-dark"
-          >
+          <Button href="/tin-tuc" variant="primary">
             {t("viewMore")}
-          </Link>
+          </Button>
         </div>
       </div>
     </section>

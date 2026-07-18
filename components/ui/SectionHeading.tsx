@@ -2,14 +2,26 @@ import { cn } from "@/lib/utils";
 
 type SectionHeadingProps = {
   title: string;
-  variant?: "gold" | "white";
+  variant?: "light" | "dark" | "primary";
   className?: string;
   as?: "h2" | "h3";
 };
 
+const titleVariants = {
+  light: "text-primary-dark",
+  dark: "text-white",
+  primary: "text-accent-soft",
+};
+
+const underlineVariants = {
+  light: "bg-accent",
+  dark: "bg-accent",
+  primary: "bg-accent-soft",
+};
+
 export function SectionHeading({
   title,
-  variant = "gold",
+  variant = "light",
   className,
   as: Tag = "h2",
 }: SectionHeadingProps) {
@@ -18,12 +30,12 @@ export function SectionHeading({
       <Tag
         className={cn(
           "text-2xl font-bold uppercase tracking-wide md:text-3xl",
-          variant === "gold" ? "text-accent" : "text-white",
+          titleVariants[variant],
         )}
       >
         {title}
       </Tag>
-      <div className="mx-auto mt-3 h-px w-16 bg-white/80" />
+      <div className={cn("mx-auto mt-3 h-0.5 w-16", underlineVariants[variant])} />
     </div>
   );
 }

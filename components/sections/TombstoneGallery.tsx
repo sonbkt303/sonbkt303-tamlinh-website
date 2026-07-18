@@ -3,6 +3,7 @@ import { Link } from "@/lib/i18n/routing";
 import { getTombstonesByCategory } from "@/lib/data/tombstones";
 import { ProductCard } from "@/components/ui/ProductCard";
 import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Button } from "@/components/ui/Button";
 
 type TombstoneGalleryProps = {
   limit?: number;
@@ -36,9 +37,9 @@ export async function TombstoneGallery({
   }
 
   return (
-    <section className="bg-primary px-4 py-16">
-      <div className="mx-auto max-w-7xl lg:px-6">
-        <SectionHeading title={t("title")} variant="white" />
+    <section className="section-padding bg-primary">
+      <div className="container-main">
+        <SectionHeading title={t("title")} variant="primary" />
         <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {products.map((product) => (
             <ProductCard key={product.slug} {...product} />
@@ -57,7 +58,7 @@ export async function TombstoneGallery({
                     page: String(pageNum),
                   },
                 }}
-                className={`rounded px-4 py-2 text-sm font-semibold ${
+                className={`focus-ring rounded-lg px-4 py-2 text-sm font-semibold ${
                   pageNum === page
                     ? "bg-accent text-text-dark"
                     : "bg-white/10 text-white hover:bg-white/20"
@@ -71,12 +72,9 @@ export async function TombstoneGallery({
 
         {!showPagination && (
           <div className="mt-10 text-center">
-            <Link
-              href={viewMoreHref}
-              className="inline-block rounded bg-accent px-8 py-3 text-sm font-bold uppercase text-text-dark transition hover:brightness-110"
-            >
+            <Button href={viewMoreHref} variant="accent">
               {t("viewMore")}
-            </Link>
+            </Button>
           </div>
         )}
       </div>

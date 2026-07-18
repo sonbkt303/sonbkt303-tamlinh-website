@@ -8,7 +8,7 @@ type ProductCardProps = {
 
 export function ProductCard({ title, image }: ProductCardProps) {
   return (
-    <article className="group overflow-hidden bg-white/10 shadow-lg transition hover:-translate-y-1 hover:shadow-xl">
+    <article className="group overflow-hidden rounded-xl bg-white/15 shadow-lg backdrop-blur-sm transition hover:-translate-y-1 hover:shadow-xl">
       <div className="relative aspect-[3/4] overflow-hidden">
         <Image
           src={image}
@@ -19,7 +19,7 @@ export function ProductCard({ title, image }: ProductCardProps) {
         />
       </div>
       <div className="p-4 text-center">
-        <h3 className="min-h-[3rem] text-sm font-semibold uppercase leading-snug text-white md:text-base">
+        <h3 className="line-clamp-2 text-base font-medium leading-snug text-white">
           {title}
         </h3>
       </div>

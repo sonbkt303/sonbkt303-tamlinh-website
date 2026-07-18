@@ -1,6 +1,6 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/lib/i18n/routing";
-import { Link } from "@/lib/i18n/routing";
+import { Button } from "@/components/ui/Button";
 
 type PageStubProps = {
   params: Promise<{ locale: Locale }>;
@@ -16,22 +16,17 @@ export async function PageStub({ params, pageKey, children }: PageStubProps) {
   const tCommon = await getTranslations("common");
 
   return (
-    <section className="bg-primary px-4 py-20">
-      <div className="mx-auto max-w-4xl text-center text-white">
-        <h1 className="text-3xl font-bold uppercase text-accent md:text-4xl">
+    <section className="section-padding bg-primary">
+      <div className="container-main max-w-4xl text-center text-white">
+        <h1 className="text-3xl font-bold uppercase text-accent-soft md:text-4xl">
           {tPage("title")}
         </h1>
-        <p className="mt-6 text-base leading-relaxed text-white/90 md:text-lg">
-          {tPage("description")}
-        </p>
-        <p className="mt-4 text-sm text-white/70">{tCommon("comingSoon")}</p>
+        <p className="prose-body mt-6 text-white/90 md:text-lg">{tPage("description")}</p>
+        <p className="mt-4 text-base text-white/70">{tCommon("comingSoon")}</p>
         {children}
-        <Link
-          href="/"
-          className="mt-8 inline-block rounded bg-accent px-6 py-3 text-sm font-bold uppercase text-text-dark"
-        >
+        <Button href="/" variant="accent" className="mt-8">
           {tCommon("backHome")}
-        </Link>
+        </Button>
       </div>
     </section>
   );

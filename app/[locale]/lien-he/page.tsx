@@ -4,7 +4,7 @@ import { getPageMetadata } from "@/lib/seo";
 import { MarkdownContent } from "@/components/MarkdownContent";
 import { crawledPageContent } from "@/lib/data/crawled";
 import { ContactInfo } from "@/components/ui/ContactInfo";
-import { Link } from "@/lib/i18n/routing";
+import { Button } from "@/components/ui/Button";
 
 type ContactPageProps = {
   params: Promise<{ locale: Locale }>;
@@ -31,22 +31,18 @@ export default async function ContactPage({ params }: ContactPageProps) {
   const contactContent = crawledPageContent.contact;
 
   return (
-    <section className="bg-white px-4 py-16">
-      <div className="mx-auto max-w-3xl">
-        <h1 className="text-center text-3xl font-bold uppercase text-primary md:text-4xl">
+    <section className="section-padding bg-surface">
+      <div className="container-main max-w-3xl">
+        <h1 className="text-center text-3xl font-bold uppercase text-primary-dark md:text-4xl">
           {t("title")}
         </h1>
-        <p className="mx-auto mt-4 max-w-2xl text-center text-gray-600">
-          {t("description")}
-        </p>
+        <p className="prose-body mx-auto mt-4 max-w-2xl text-center">{t("description")}</p>
 
         <ContactInfo className="mt-10" />
 
         {aboutContent?.markdown && (
           <div className="mt-10">
-            <h2 className="mb-6 text-xl font-bold uppercase text-primary">
-              {tAbout("title")}
-            </h2>
+            <h2 className="mb-6 text-xl font-semibold text-primary-dark">{tAbout("title")}</h2>
             <MarkdownContent source={aboutContent.markdown} />
           </div>
         )}
@@ -58,12 +54,7 @@ export default async function ContactPage({ params }: ContactPageProps) {
         )}
 
         <div className="mt-10 text-center">
-          <Link
-            href="/"
-            className="inline-block rounded bg-primary px-6 py-3 text-sm font-bold uppercase text-white"
-          >
-            {tCommon("backHome")}
-          </Link>
+          <Button href="/">{tCommon("backHome")}</Button>
         </div>
       </div>
     </section>

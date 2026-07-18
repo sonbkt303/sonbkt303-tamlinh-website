@@ -32,14 +32,12 @@ export default async function TombstonesPage({
 
   return (
     <>
-      <section className="bg-primary px-4 py-16 text-white">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="text-3xl font-bold uppercase text-accent md:text-4xl">
+      <section className="section-padding bg-primary text-white">
+        <div className="container-main max-w-4xl text-center">
+          <h1 className="text-3xl font-bold uppercase text-accent-soft md:text-4xl">
             {t("title")}
           </h1>
-          <p className="mt-6 text-base leading-relaxed text-white/90 md:text-lg">
-            {t("description")}
-          </p>
+          <p className="prose-body mt-6 text-white/90 md:text-lg">{t("description")}</p>
         </div>
       </section>
       <CategoryFilter activeCategory={category} />

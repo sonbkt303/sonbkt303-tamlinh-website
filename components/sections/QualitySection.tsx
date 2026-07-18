@@ -21,28 +21,22 @@ export function QualitySection({
   imageAlt,
 }: QualitySectionProps) {
   return (
-    <section className="bg-white px-4 py-16">
-      <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:px-6">
+    <section className="section-padding bg-surface">
+      <div className="container-main grid items-center gap-10 lg:grid-cols-2">
         <div>
-          <SectionHeading
-            title={title}
-            variant="gold"
-            className="text-left [&_h2]:text-primary [&_div]:bg-primary"
-          />
+          <SectionHeading title={title} variant="light" className="text-left" />
           <div className="mt-8">
             <FeatureList items={features} />
           </div>
 
-          <h3 className="mt-10 text-lg font-bold uppercase leading-snug text-accent">
+          <h3 className="mt-10 text-lg font-semibold leading-snug text-primary-dark md:text-xl">
             {commitmentTitle}
           </h3>
-          <p className="mt-4 text-sm leading-relaxed text-gray-600 md:text-base">
-            {commitment}
-          </p>
-          <p className="mt-4 text-sm leading-relaxed text-gray-700">{contactLine}</p>
+          <p className="prose-body mt-4">{commitment}</p>
+          <p className="prose-body mt-4 text-text-dark">{contactLine}</p>
         </div>
 
-        <div className="relative aspect-[4/5] overflow-hidden rounded-lg shadow-2xl">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-xl shadow-lg">
           <Image
             src={qualityImage}
             alt={imageAlt}

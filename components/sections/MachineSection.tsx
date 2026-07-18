@@ -1,9 +1,9 @@
 import { getTranslations } from "next-intl/server";
-import { Link } from "@/lib/i18n/routing";
 import { sandblasterImages, sandblasterVideo } from "@/lib/data/sandblaster-media";
 import { siteConfig } from "@/lib/site-config";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SandblasterDetail } from "@/components/sections/SandblasterDetail";
+import { Button, ExternalButton } from "@/components/ui/Button";
 
 type MachineSectionProps = {
   variant?: "teaser" | "full";
@@ -15,8 +15,8 @@ export async function MachineSection({ variant = "teaser" }: MachineSectionProps
 
   if (variant === "full") {
     return (
-      <section className="bg-primary-dark px-4 py-16">
-        <div className="mx-auto max-w-7xl lg:px-6">
+      <section className="section-padding bg-primary-dark">
+        <div className="container-main">
           <SandblasterDetail />
         </div>
       </section>
@@ -31,40 +31,34 @@ export async function MachineSection({ variant = "teaser" }: MachineSectionProps
   ];
 
   return (
-    <section id="may-ban-cat" className="bg-primary-dark px-4 py-16">
-      <div className="mx-auto max-w-7xl lg:px-6">
-        <SectionHeading title={t("title")} variant="white" />
+    <section id="may-ban-cat" className="section-padding bg-primary-dark">
+      <div className="container-main">
+        <SectionHeading title={t("title")} variant="dark" />
 
         <div className="mt-10 grid gap-10 lg:grid-cols-2">
           <div className="space-y-6">
-            <p className="text-sm font-semibold text-accent md:text-base">{t("brandLine")}</p>
+            <p className="text-base font-semibold text-accent">{t("brandLine")}</p>
             <h3 className="font-serif text-xl font-bold leading-snug text-white md:text-2xl">
               {t("headline")}
             </h3>
             <ul className="space-y-3">
               {teaserHighlights.map((item) => (
-                <li key={item} className="text-sm leading-relaxed text-white/95 md:text-base">
+                <li key={item} className="prose-body text-white/95">
                   {item}
                 </li>
               ))}
             </ul>
             <div className="flex flex-wrap gap-4 pt-2">
-              <a
-                href={`tel:${phone}`}
-                className="inline-block rounded bg-cta-phone px-6 py-3 text-sm font-bold uppercase text-white transition hover:brightness-110"
-              >
+              <ExternalButton href={`tel:${phone}`} variant="phone">
                 {t("cta")}
-              </a>
-              <Link
-                href="/may-ban-cat"
-                className="inline-block rounded border border-white px-6 py-3 text-sm font-bold uppercase text-white transition hover:bg-white/10"
-              >
+              </ExternalButton>
+              <Button href="/may-ban-cat" variant="outline">
                 {t("viewMore")}
-              </Link>
+              </Button>
             </div>
           </div>
 
-          <div className="overflow-hidden rounded-lg bg-black/30">
+          <div className="overflow-hidden rounded-xl bg-black/30">
             <video
               controls
               playsInline

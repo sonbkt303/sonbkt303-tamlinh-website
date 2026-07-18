@@ -65,20 +65,20 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
   const articleJsonLd = getArticleJsonLd(post);
 
   return (
-    <article className="bg-white px-4 py-16">
-      <div className="mx-auto max-w-3xl">
-        <Link href="/tin-tuc" className="text-sm font-semibold uppercase text-primary">
+    <article className="section-padding bg-surface">
+      <div className="container-main max-w-3xl">
+        <Link href="/tin-tuc" className="focus-ring text-sm font-semibold text-primary">
           ← {tCommon("backHome")}
         </Link>
         <header className="mt-6">
-          <time className="text-sm text-gray-500">{post.date}</time>
+          <time className="text-sm text-text-muted">{post.date}</time>
           <h1 className="mt-3 font-serif text-3xl font-bold text-text-dark md:text-4xl">
             {post.title}
           </h1>
-          <p className="mt-4 text-gray-600">{post.excerpt}</p>
+          <p className="prose-body mt-4">{post.excerpt}</p>
         </header>
         {post.image && (
-          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-lg">
+          <div className="relative mt-8 aspect-[16/9] overflow-hidden rounded-xl">
             <Image
               src={post.image}
               alt={post.title}
@@ -89,7 +89,7 @@ export default async function NewsDetailPage({ params }: NewsDetailPageProps) {
             />
           </div>
         )}
-        <div className="prose prose-lg mt-10 max-w-none text-gray-700">
+        <div className="prose prose-lg mt-10 max-w-none text-text-muted">
           <MDXRemote source={post.content} />
         </div>
       </div>
