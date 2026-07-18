@@ -60,7 +60,7 @@ export async function TombstoneGallery({
                 }}
                 className={`focus-ring rounded-lg px-4 py-2 text-sm font-semibold ${
                   pageNum === page
-                    ? "bg-accent text-text-dark"
+                    ? "bg-accent text-accent-foreground"
                     : "bg-white/10 text-white hover:bg-white/20"
                 }`}
               >

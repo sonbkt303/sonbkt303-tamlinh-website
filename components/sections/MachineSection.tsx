@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { sandblasterImages, sandblasterVideo } from "@/lib/data/sandblaster-media";
 import { siteConfig } from "@/lib/site-config";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { SandblasterDetail } from "@/components/sections/SandblasterDetail";
+import { SandblasterHero, SandblasterDetails } from "@/components/sections/SandblasterDetail";
 import { Button, ExternalButton } from "@/components/ui/Button";
 
 type MachineSectionProps = {
@@ -15,11 +15,18 @@ export async function MachineSection({ variant = "teaser" }: MachineSectionProps
 
   if (variant === "full") {
     return (
-      <section className="section-padding bg-primary-dark">
-        <div className="container-main">
-          <SandblasterDetail />
-        </div>
-      </section>
+      <>
+        <section className="section-padding bg-primary-dark">
+          <div className="container-main">
+            <SandblasterHero />
+          </div>
+        </section>
+        <section className="section-padding bg-surface">
+          <div className="container-main">
+            <SandblasterDetails />
+          </div>
+        </section>
+      </>
     );
   }
 
@@ -43,7 +50,7 @@ export async function MachineSection({ variant = "teaser" }: MachineSectionProps
             </h3>
             <ul className="space-y-3">
               {teaserHighlights.map((item) => (
-                <li key={item} className="prose-body text-white/95">
+                <li key={item} className="prose-on-dark">
                   {item}
                 </li>
               ))}

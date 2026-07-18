@@ -5,6 +5,7 @@
   --color-primary-dark: #7a6648;
   --color-accent: #e8c547;
   --color-accent-soft: #f5e6a8;
+  --color-accent-foreground: #3d3428;
   --color-cta-phone: #e53935;
   --color-cta-zalo: #0068ff;
   --color-text-light: #ffffff;
@@ -23,6 +24,7 @@
   --color-primary-dark: var(--color-primary-dark);
   --color-accent: var(--color-accent);
   --color-accent-soft: var(--color-accent-soft);
+  --color-accent-foreground: var(--color-accent-foreground);
   --color-cta-phone: var(--color-cta-phone);
   --color-cta-zalo: var(--color-cta-zalo);
   --color-text-light: var(--color-text-light);
@@ -74,6 +76,19 @@ body {
   .prose-body {
     font-size: 1.0625rem;
     line-height: 1.75;
+  }
+}
+
+.prose-on-dark {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: rgba(255, 255, 255, 0.95);
+}
+
+@media (min-width: 768px) {
+  .prose-on-dark {
+    font-size: 1.0625rem;
+    line-height: 1.8;
   }
 }
 

@@ -4,11 +4,20 @@ import { sandblasterImages, sandblasterVideo } from "@/lib/data/sandblaster-medi
 import { siteConfig } from "@/lib/site-config";
 import { ExternalButton } from "@/components/ui/Button";
 
-function BulletList({ items }: { items: string[] }) {
+function BulletList({
+  items,
+  variant = "light",
+}: {
+  items: string[];
+  variant?: "dark" | "light";
+}) {
   return (
     <ul className="space-y-3">
       {items.map((item) => (
-        <li key={item} className="prose-body text-white/95">
+        <li
+          key={item}
+          className={variant === "dark" ? "prose-body text-white/95" : "prose-body"}
+        >
           {item}
         </li>
       ))}
@@ -16,17 +25,13 @@ function BulletList({ items }: { items: string[] }) {
   );
 }
 
-function ContentSection({
-  title,
-  items,
-}: {
-  title: string;
-  items: string[];
-}) {
+function ContentCard({ title, items }: { title: string; items: string[] }) {
   return (
-    <div>
-      <h3 className="mb-4 text-lg font-semibold text-accent md:text-xl">{title}</h3>
-      <BulletList items={items} />
+    <div className="rounded-xl border border-primary/10 bg-white p-6 shadow-sm">
+      <h3 className="mb-4 border-b border-primary/10 pb-3 text-base font-semibold leading-snug text-text-dark md:text-lg">
+        {title}
+      </h3>
+      <BulletList items={items} variant="light" />
     </div>
   );
 }
@@ -50,19 +55,55 @@ function MediaGallery({ imageAlt }: { imageAlt: string }) {
   );
 }
 
-export async function SandblasterDetail() {
+export async function SandblasterHero() {
   const t = await getTranslations("machines");
   const tPage = await getTranslations("pages.sandblasters");
   const phone = siteConfig.phone[0];
   const phoneHref = phone.replace(/\s/g, "");
 
-  const intro = [t("intro.0")];
-  const heroHighlights = [
-    t("highlights.0"),
-    t("highlights.1"),
-    t("highlights.2"),
-    t("highlights.3"),
-  ];
+  return (
+    <div className="grid items-start gap-8 lg:grid-cols-2">
+      <div className="order-1 space-y-4">
+        <div className="overflow-hidden rounded-xl bg-black/30">
+          <video
+            controls
+            playsInline
+            preload="metadata"
+            poster={sandblasterImages[0]}
+            className="aspect-video w-full"
+          >
+            <source src={sandblasterVideo} type="video/mp4" />
+          </video>
+          <p className="px-4 py-2 text-center text-sm text-white/70">{t("videoAlt")}</p>
+        </div>
+        <MediaGallery imageAlt={t("imageAlt")} />
+      </div>
+
+      <div className="order-2 space-y-6">
+        <div>
+          <h1 className="text-2xl font-bold text-white md:text-3xl lg:text-4xl">
+            {tPage("title")}
+          </h1>
+          <div className="mt-3 h-0.5 w-16 bg-accent-soft" />
+        </div>
+        <div className="space-y-4 rounded-xl border border-white/10 bg-black/25 p-5">
+          <p className="prose-on-dark font-medium">{tPage("description")}</p>
+          <p className="prose-on-dark text-white/90">{t("audience")}</p>
+          <p className="text-sm leading-relaxed text-white/80">{t("audienceNote")}</p>
+        </div>
+        <ExternalButton href={`tel:${phoneHref}`} variant="phone">
+          {t("cta")}
+        </ExternalButton>
+      </div>
+    </div>
+  );
+}
+
+export async function SandblasterDetails() {
+  const t = await getTranslations("machines");
+  const phone = siteConfig.phone[0];
+  const phoneHref = phone.replace(/\s/g, "");
+
   const advantages = [
     t("advantages.0"),
     t("advantages.1"),
@@ -74,69 +115,25 @@ export async function SandblasterDetail() {
   const commitment = [t("commitment.0"), t("commitment.1"), t("commitment.2")];
 
   return (
-    <div className="space-y-12">
-      <div className="space-y-3 text-center lg:text-left">
-        <h1 className="text-2xl font-bold uppercase text-accent md:text-3xl lg:text-4xl">
-          {tPage("title")}
-        </h1>
-        <p className="prose-body mx-auto max-w-2xl text-white/85 lg:mx-0">
-          {tPage("description")}
-        </p>
+    <div className="space-y-10">
+      <div className="grid gap-6 md:grid-cols-3">
+        <ContentCard title={t("advantagesTitle")} items={advantages} />
+        <ContentCard title={t("specsTitle")} items={specs} />
+        <ContentCard title={t("commitmentTitle")} items={commitment} />
       </div>
 
-      <div className="grid items-start gap-8 lg:grid-cols-2">
-        <div className="order-2 space-y-6 lg:order-1">
-          <p className="text-base font-semibold text-accent">{t("brandLine")}</p>
-          <h2 className="font-serif text-xl font-bold leading-snug text-white md:text-2xl">
-            {t("headline")}
-          </h2>
-          <BulletList items={heroHighlights} />
-          <ExternalButton href={`tel:${phoneHref}`} variant="phone">
-            {t("cta")}
-          </ExternalButton>
-        </div>
-
-        <div className="order-1 space-y-4 lg:order-2">
-          <div className="overflow-hidden rounded-xl bg-black/30">
-            <video
-              controls
-              playsInline
-              preload="metadata"
-              poster={sandblasterImages[0]}
-              className="aspect-video w-full"
-            >
-              <source src={sandblasterVideo} type="video/mp4" />
-            </video>
-            <p className="px-4 py-2 text-center text-sm text-white/70">{t("videoAlt")}</p>
-          </div>
-          <MediaGallery imageAlt={t("imageAlt")} />
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-3xl space-y-6">
-        <BulletList items={intro} />
-        <p className="prose-body text-white/95">{t("audience")}</p>
-        <p className="prose-body text-white/95">{t("audienceNote")}</p>
-      </div>
-
-      <div className="mx-auto grid max-w-3xl gap-10">
-        <ContentSection title={t("advantagesTitle")} items={advantages} />
-        <ContentSection title={t("specsTitle")} items={specs} />
-        <ContentSection title={t("commitmentTitle")} items={commitment} />
-      </div>
-
-      <div className="mx-auto max-w-3xl rounded-xl border border-accent/30 bg-black/30 px-6 py-8 text-center">
-        <p className="prose-body text-white/95">{t("contactTitle")}</p>
-        <p className="mt-4 text-lg font-semibold text-accent">
+      <div className="rounded-xl bg-surface-muted px-6 py-8 text-center">
+        <p className="prose-body">{t("contactTitle")}</p>
+        <p className="mt-4 text-lg font-semibold text-primary-dark">
           Hotline:{" "}
-          <a href={`tel:${phoneHref}`} className="focus-ring rounded hover:underline">
+          <a
+            href={`tel:${phoneHref}`}
+            className="focus-ring rounded text-primary hover:underline"
+          >
             {phone}
           </a>
         </p>
-        <p className="mt-2 text-base text-white/85">{siteConfig.address}</p>
-        <ExternalButton href={`tel:${phoneHref}`} variant="phone" className="mt-6">
-          {t("cta")}
-        </ExternalButton>
+        <p className="mt-2 text-base text-text-muted">{siteConfig.address}</p>
       </div>
     </div>
   );

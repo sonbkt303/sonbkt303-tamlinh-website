@@ -8,7 +8,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary:
     "bg-primary text-white hover:bg-primary-dark",
   accent:
-    "bg-accent text-text-dark hover:brightness-110",
+    "bg-accent text-accent-foreground hover:brightness-110",
   phone:
     "bg-cta-phone text-white hover:brightness-110",
   outline:
