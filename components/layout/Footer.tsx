@@ -22,9 +22,6 @@ export async function Footer() {
               <strong>{t("addressLabel")}:</strong> {siteConfig.address}
             </li>
             <li>
-              <strong>{t("factoryLabel")}:</strong> {siteConfig.factory}
-            </li>
-            <li>
               <strong>{t("hotlineLabel")}:</strong> {siteConfig.phone.join(" - ")}
             </li>
             <li>
