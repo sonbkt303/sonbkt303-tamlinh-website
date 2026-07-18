@@ -10,9 +10,8 @@ export function getSiteUrl(path = "") {
 
 export const pathMap: Record<string, string> = {
   home: "/",
-  about: "/gioi-thieu",
   tombstones: "/san-pham/bia-mo",
-  sandblasters: "/san-pham/may-ban-cat",
+  sandblasters: "/may-ban-cat",
   pricing: "/gia-khac-bia-mo",
   gallery: "/100-mau-bia-mo-dep",
   news: "/tin-tuc",

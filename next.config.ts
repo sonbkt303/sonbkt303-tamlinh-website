@@ -13,7 +13,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/en/about",
-        destination: "/gioi-thieu",
+        destination: "/lien-he",
+        permanent: true,
+      },
+      {
+        source: "/gioi-thieu",
+        destination: "/lien-he",
         permanent: true,
       },
       {
@@ -23,7 +28,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/en/products/sandblasters",
-        destination: "/san-pham/may-ban-cat",
+        destination: "/may-ban-cat",
+        permanent: true,
+      },
+      {
+        source: "/san-pham/may-ban-cat",
+        destination: "/may-ban-cat",
         permanent: true,
       },
       {

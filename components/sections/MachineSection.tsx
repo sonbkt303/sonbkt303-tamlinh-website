@@ -56,7 +56,7 @@ export async function MachineSection({ variant = "teaser" }: MachineSectionProps
                 {t("cta")}
               </a>
               <Link
-                href="/san-pham/may-ban-cat"
+                href="/may-ban-cat"
                 className="inline-block rounded border border-white px-6 py-3 text-sm font-bold uppercase text-white transition hover:bg-white/10"
               >
                 {t("viewMore")}

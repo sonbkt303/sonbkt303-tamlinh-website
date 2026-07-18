@@ -9,7 +9,6 @@ export type NavItem = {
 
 export const mainNavigation: NavItem[] = [
   { key: "home", href: "/" },
-  { key: "about", href: "/gioi-thieu" },
   {
     key: "products",
     children: [
@@ -24,16 +23,10 @@ export const mainNavigation: NavItem[] = [
           { key: "beautifulModels", href: "/100-mau-bia-mo-dep" },
         ],
       },
-      {
-        key: "sandblasters",
-        children: [
-          { key: "cabinetBlaster", href: "/san-pham/may-ban-cat" },
-          { key: "boxBlaster", href: "/san-pham/may-ban-cat" },
-          { key: "blasterAccessories", href: "/san-pham/may-ban-cat" },
-        ],
-      },
+      { key: "sandblasters", href: "/may-ban-cat" },
     ],
   },
+  { key: "sandblasters", href: "/may-ban-cat" },
   { key: "pricing", href: "/gia-khac-bia-mo" },
   { key: "gallery100", href: "/100-mau-bia-mo-dep" },
   { key: "news", href: "/tin-tuc" },

@@ -8,9 +8,8 @@ export const routing = defineRouting({
   localeDetection: false,
   pathnames: {
     "/": "/",
-    "/gioi-thieu": "/gioi-thieu",
     "/san-pham/bia-mo": "/san-pham/bia-mo",
-    "/san-pham/may-ban-cat": "/san-pham/may-ban-cat",
+    "/may-ban-cat": "/may-ban-cat",
     "/gia-khac-bia-mo": "/gia-khac-bia-mo",
     "/100-mau-bia-mo-dep": "/100-mau-bia-mo-dep",
     "/tin-tuc": "/tin-tuc",

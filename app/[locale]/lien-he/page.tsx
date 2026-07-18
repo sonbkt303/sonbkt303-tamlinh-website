@@ -25,8 +25,10 @@ export default async function ContactPage({ params }: ContactPageProps) {
   setRequestLocale(locale);
 
   const t = await getTranslations("pages.contact");
+  const tAbout = await getTranslations("pages.about");
   const tCommon = await getTranslations("common");
-  const content = crawledPageContent.contact;
+  const aboutContent = crawledPageContent.about;
+  const contactContent = crawledPageContent.contact;
 
   return (
     <section className="bg-white px-4 py-16">
@@ -40,9 +42,18 @@ export default async function ContactPage({ params }: ContactPageProps) {
 
         <ContactInfo className="mt-10" />
 
-        {content?.markdown && (
+        {aboutContent?.markdown && (
+          <div className="mt-10">
+            <h2 className="mb-6 text-xl font-bold uppercase text-primary">
+              {tAbout("title")}
+            </h2>
+            <MarkdownContent source={aboutContent.markdown} />
+          </div>
+        )}
+
+        {contactContent?.markdown && (
           <div className="mt-8">
-            <MarkdownContent source={content.markdown} />
+            <MarkdownContent source={contactContent.markdown} />
           </div>
         )}
 

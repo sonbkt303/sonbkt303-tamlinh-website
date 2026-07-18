@@ -5,7 +5,6 @@
   },
   "nav": {
     "home": "Trang chủ",
-    "about": "Giới thiệu",
     "products": "Sản phẩm",
     "pricing": "Giá khắc bia mộ",
     "gallery100": "100 mẫu bia mộ đẹp",
@@ -18,10 +17,7 @@
     "familyTomb": "Bia lăng mộ",
     "martyrPlaque": "Bia liệt sĩ",
     "embossed3d": "Bia mộ chữ nổi 3D",
-    "beautifulModels": "Mẫu bia mộ đẹp",
-    "cabinetBlaster": "Máy bắn cát tủ",
-    "boxBlaster": "Máy bắn cát hộp",
-    "blasterAccessories": "Phụ kiện máy bắn cát"
+    "beautifulModels": "Mẫu bia mộ đẹp"
   },
   "hero": {
     "title": "TÂM LINH HUYỀN BÍ",
@@ -136,7 +132,7 @@
     },
     "contact": {
       "title": "Liên hệ",
-      "description": "Liên hệ Tâm Linh Huyền Bí - Hotline, Zalo, địa chỉ xưởng tại Hưng Yên."
+      "description": "Giới thiệu xưởng Tâm Linh Huyền Bí và thông tin liên hệ — Hotline, Zalo, địa chỉ xưởng tại Hưng Yên."
     },
     "tombstones": {
       "title": "Sản phẩm bia mộ",
