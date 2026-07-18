@@ -27,16 +27,17 @@ export function getDefaultMetadata(): Metadata {
   return {
     metadataBase: new URL(siteConfig.url),
     title: {
-      default: "Tam Linh - Xưởng Khắc Bia Mộ & Máy Bắn Cát Uy Tín Hà Nội",
-      template: "%s | Tam Linh",
+      default: `${siteConfig.name} - Máy Phun Cát & Khắc Bia Mộ Đá Granite`,
+      template: `%s | ${siteConfig.name}`,
     },
     description:
-      "Xưởng khắc bia mộ & máy bắn cát uy tín tại Hà Nội. Bia mộ đá granite, chữ nổi 3D, men sứ, bia công giáo. Bảo hành 30 năm, giao hàng toàn quốc.",
+      "Xưởng sản xuất máy phun cát tuần hoàn không bụi và chế tác bia mộ đá granite tại Hưng Yên. Chạm khắc chữ nổi 3D, men sứ, bia công giáo. Giao hàng toàn quốc.",
     keywords: [
       "khắc bia mộ",
       "bia mộ đá granite",
+      "máy phun cát",
       "máy bắn cát",
-      "bia mộ Hà Nội",
+      "bia mộ Hưng Yên",
       "chữ nổi 3D",
     ],
     openGraph: {

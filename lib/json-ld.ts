@@ -13,7 +13,7 @@ export function getLocalBusinessJsonLd() {
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address,
-      addressLocality: "Hà Nội",
+      addressLocality: "Hưng Yên",
       addressCountry: "VN",
     },
     areaServed: "VN",

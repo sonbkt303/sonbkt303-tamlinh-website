@@ -40,7 +40,10 @@ export default async function HomePage({ params }: HomePageProps) {
     <>
       <HeroSection
         title={tHero("title")}
-        subtitle={tHero("subtitle")}
+        serviceLine1={tHero("serviceLine1")}
+        serviceLine2={tHero("serviceLine2")}
+        addressLine={tHero("addressLine")}
+        contactLine={tHero("contactLine")}
         slideAlt={tHero("slideAlt")}
       />
       <BrandSlider />

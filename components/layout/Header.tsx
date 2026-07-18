@@ -8,11 +8,11 @@ export function Header() {
     <header className="sticky top-0 z-40 bg-primary-dark shadow-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 lg:px-6">
         <Link href="/" className="shrink-0 py-3">
-          <div className="bg-black px-4 py-2">
-            <span className="font-serif text-lg font-bold tracking-wide text-accent">
-              tamlinh
+          <div className="bg-black px-3 py-2 lg:px-4">
+            <span className="font-serif text-sm font-bold tracking-tight text-accent lg:text-base">
+              tamlinhhuyenbi
             </span>
-            <span className="font-serif text-lg font-bold text-white">.com</span>
+            <span className="font-serif text-sm font-bold text-white lg:text-base">.com</span>
           </div>
         </Link>
 

@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Tam Linh - Xưởng Khắc Bia Mộ & Máy Bắn Cát Uy Tín Hà Nội",
-    "description": "Xưởng khắc bia mộ & máy bắn cát uy tín tại Hà Nội. Bia mộ đá granite, chữ nổi 3D, men sứ, bia công giáo. Bảo hành 30 năm, giao hàng toàn quốc."
+    "title": "Tâm Linh Huyền Bí - Máy Phun Cát & Khắc Bia Mộ Đá Granite",
+    "description": "Xưởng sản xuất máy phun cát tuần hoàn không bụi và chế tác bia mộ đá granite tại Hưng Yên. Chạm khắc chữ nổi 3D, men sứ, bia công giáo. Giao hàng toàn quốc."
   },
   "nav": {
     "home": "Trang chủ",
@@ -24,15 +24,18 @@
     "blasterAccessories": "Phụ kiện máy bắn cát"
   },
   "hero": {
-    "title": "100 Mẫu Bia Mộ Đẹp Trên Đá Granite",
-    "subtitle": "Tam Linh",
-    "slideAlt": "Khắc bia mộ Hà Nội"
+    "title": "TÂM LINH HUYỀN BÍ",
+    "serviceLine1": "Sản xuất lắp đặt Máy phun cát · Chạm khắc bia mộ đá Tuần hoàn không bụi",
+    "serviceLine2": "Chế tác Điêu khắc Bia đá Granite",
+    "addressLine": "Xưởng SX: Ngã 3 Đống năm, Nam Đông Hưng, Tỉnh Hưng Yên",
+    "contactLine": "Hotline · Zalo: 0987 595 794",
+    "slideAlt": "Tâm Linh Huyền Bí - Khắc bia mộ đá granite"
   },
   "welcome": {
-    "title": "Tamlinh.com xin kính chào quý khách!",
+    "title": "Tamlinhhuyenbi.com xin kính chào quý khách!",
     "tagline": "Giá Trị Bền Vững Mai Sau - Trọn Đạo Hiếu Nghĩa Với Tổ Tiên!",
     "quote": "Không có một con người hoàn hảo - Nhưng sẽ có những sản phẩm hoàn hảo, nó được tạo ra bởi con người mang những yếu tố hoàn hảo!",
-    "intro": "Tam Linh tự hào là xưởng chế tác và khắc bia mộ đá uy tín, chuyên nghiệp hàng đầu tại Hà Nội. Với đội ngũ thợ gia truyền lành nghề, có tâm và có tầm, chúng tôi chuyên cung cấp các sản phẩm bia mộ chất lượng cao, mang lại tính thẩm mỹ trang nghiêm và độ bền lâu dài."
+    "intro": "Tâm Linh Huyền Bí tự hào là xưởng sản xuất máy phun cát tuần hoàn không bụi và chế tác khắc bia mộ đá uy tín tại Hưng Yên. Với đội ngũ thợ gia truyền lành nghề, có tâm và có tầm, chúng tôi chuyên cung cấp các sản phẩm bia mộ chất lượng cao, mang lại tính thẩm mỹ trang nghiêm và độ bền lâu dài."
   },
   "quality": {
     "title": "Chất lượng sản phẩm",
@@ -83,7 +86,7 @@
     "emailLabel": "Email",
     "newsTitle": "Tin tức",
     "fanpageTitle": "Fanpage",
-    "copyright": "Bản quyền thuộc về Tamlinh.com | Cung cấp bởi Tam Linh"
+    "copyright": "Bản quyền thuộc về Tamlinhhuyenbi.com | Tâm Linh Huyền Bí"
   },
   "floatingContact": {
     "call": "Gọi ngay",
@@ -97,15 +100,15 @@
   "pages": {
     "about": {
       "title": "Giới thiệu",
-      "description": "Giới thiệu về xưởng khắc bia mộ và máy bắn cát Tam Linh tại Hà Nội."
+      "description": "Giới thiệu về xưởng Tâm Linh Huyền Bí - máy phun cát và khắc bia mộ đá tại Hưng Yên."
     },
     "contact": {
       "title": "Liên hệ",
-      "description": "Liên hệ xưởng khắc bia mộ Tam Linh - Hotline, Zalo, địa chỉ xưởng tại Hà Nội."
+      "description": "Liên hệ Tâm Linh Huyền Bí - Hotline, Zalo, địa chỉ xưởng tại Hưng Yên."
     },
     "tombstones": {
       "title": "Sản phẩm bia mộ",
-      "description": "Danh mục bia mộ đá granite, chữ nổi 3D, men sứ, bia công giáo tại Tam Linh."
+      "description": "Danh mục bia mộ đá granite, chữ nổi 3D, men sứ, bia công giáo tại Tâm Linh Huyền Bí."
     },
     "sandblasters": {
       "title": "Máy bắn cát",
@@ -113,7 +116,7 @@
     },
     "pricing": {
       "title": "Giá khắc bia mộ",
-      "description": "Bảng giá khắc bia mộ đá granite tại xưởng Tam Linh Hà Nội."
+      "description": "Bảng giá khắc bia mộ đá granite tại xưởng Tâm Linh Huyền Bí, Hưng Yên."
     },
     "gallery": {
       "title": "100 mẫu bia mộ đẹp",

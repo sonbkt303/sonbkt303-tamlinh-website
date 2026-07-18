@@ -1,12 +1,13 @@
 import { ImageResponse } from "next/og";
+import { siteConfig } from "@/lib/site-config";
 
 export const runtime = "edge";
-export const alt = "Tam Linh";
+export const alt = siteConfig.name;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function Image() {
-  const title = "Tam Linh - Khắc Bia Mộ & Máy Bắn Cát";
+  const title = `${siteConfig.name} - Máy Phun Cát & Khắc Bia Mộ Đá Granite`;
 
   return new ImageResponse(
     (
@@ -20,14 +21,14 @@ export default async function Image() {
           justifyContent: "center",
           background: "#a38a5d",
           color: "#ffffff",
-          fontSize: 56,
+          fontSize: 48,
           fontWeight: 700,
           textAlign: "center",
           padding: 48,
         }}
       >
-        <div style={{ fontSize: 36, color: "#f7d749", marginBottom: 24 }}>
-          tamlinh.com
+        <div style={{ fontSize: 32, color: "#f7d749", marginBottom: 24 }}>
+          {siteConfig.domain}
         </div>
         {title}
       </div>
