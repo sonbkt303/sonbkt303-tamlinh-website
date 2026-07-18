@@ -1,7 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/lib/i18n/routing";
 import { siteConfig } from "@/lib/site-config";
-import { HeroSection } from "@/components/sections/HeroSection";
+import { SandblasterShowcaseHero } from "@/components/sections/SandblasterShowcaseHero";
 import { BrandSlider } from "@/components/sections/BrandSlider";
 import { WelcomeSection } from "@/components/sections/WelcomeSection";
 import { QualitySection } from "@/components/sections/QualitySection";
@@ -17,7 +17,6 @@ export default async function HomePage({ params }: HomePageProps) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const tHero = await getTranslations("hero");
   const tWelcome = await getTranslations("welcome");
   const tQuality = await getTranslations("quality");
 
@@ -36,7 +35,7 @@ export default async function HomePage({ params }: HomePageProps) {
 
   return (
     <>
-      <HeroSection slideAlt={tHero("slideAlt")} />
+      <SandblasterShowcaseHero />
       <BrandSlider />
       <WelcomeSection
         title={tWelcome("title")}

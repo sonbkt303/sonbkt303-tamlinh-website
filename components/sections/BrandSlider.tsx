@@ -8,19 +8,12 @@ const tickerText = [
 ].join("  ·  ");
 
 export function BrandSlider() {
-  const items = Array.from({ length: 5 }, (_, index) => index);
-
   return (
-    <section className="overflow-hidden bg-primary-dark py-4" aria-label="Thông tin liên hệ xưởng">
-      <div className="animate-marquee flex w-max gap-12 whitespace-nowrap">
-        {[...items, ...items].map((item, index) => (
-          <span
-            key={`${item}-${index}`}
-            className="text-sm font-semibold tracking-wide text-accent-soft/90 md:text-base"
-          >
-            {tickerText}
-          </span>
-        ))}
+    <section className="bg-primary-dark py-4" aria-label="Thông tin liên hệ xưởng">
+      <div className="container-main">
+        <p className="text-center text-sm font-semibold leading-relaxed tracking-wide text-accent-soft/90 md:text-base">
+          {tickerText}
+        </p>
       </div>
     </section>
   );

@@ -1,5 +1,4 @@
 import { getTranslations } from "next-intl/server";
-import { sandblasterImages, sandblasterVideo } from "@/lib/data/sandblaster-media";
 import { siteConfig } from "@/lib/site-config";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SandblasterHero, SandblasterDetails } from "@/components/sections/SandblasterDetail";
@@ -42,39 +41,25 @@ export async function MachineSection({ variant = "teaser" }: MachineSectionProps
       <div className="container-main">
         <SectionHeading title={t("title")} variant="dark" />
 
-        <div className="mt-10 grid gap-10 lg:grid-cols-2">
-          <div className="space-y-6">
-            <p className="text-base font-semibold text-accent">{t("brandLine")}</p>
-            <h3 className="font-serif text-xl font-bold leading-snug text-white md:text-2xl">
-              {t("headline")}
-            </h3>
-            <ul className="space-y-3">
-              {teaserHighlights.map((item) => (
-                <li key={item} className="prose-on-dark">
-                  {item}
-                </li>
-              ))}
-            </ul>
-            <div className="flex flex-wrap gap-4 pt-2">
-              <ExternalButton href={`tel:${phone}`} variant="phone">
-                {t("cta")}
-              </ExternalButton>
-              <Button href="/may-ban-cat" variant="outline">
-                {t("viewMore")}
-              </Button>
-            </div>
-          </div>
-
-          <div className="overflow-hidden rounded-xl bg-black/30">
-            <video
-              controls
-              playsInline
-              preload="metadata"
-              poster={sandblasterImages[0]}
-              className="aspect-video w-full"
-            >
-              <source src={sandblasterVideo} type="video/mp4" />
-            </video>
+        <div className="mx-auto mt-10 max-w-3xl space-y-6 text-center">
+          <p className="text-base font-semibold text-accent">{t("brandLine")}</p>
+          <h3 className="font-serif text-xl font-bold leading-snug text-white md:text-2xl">
+            {t("headline")}
+          </h3>
+          <ul className="space-y-3 text-left">
+            {teaserHighlights.map((item) => (
+              <li key={item} className="prose-on-dark">
+                {item}
+              </li>
+            ))}
+          </ul>
+          <div className="flex flex-wrap justify-center gap-4 pt-2">
+            <ExternalButton href={`tel:${phone}`} variant="phone">
+              {t("cta")}
+            </ExternalButton>
+            <Button href="/may-ban-cat" variant="outline">
+              {t("viewMore")}
+            </Button>
           </div>
         </div>
       </div>
