@@ -57,16 +57,48 @@
     "contactPrice": "Liên hệ"
   },
   "machines": {
-    "title": "Máy bắn cát chuyên dụng",
-    "introTitle": "Giải pháp máy bắn cát cho xưởng khắc đá",
-    "features": {
-      "0": "Công suất ổn định, phù hợp khắc chữ nổi 3D trên đá granite.",
-      "1": "Thiết kế bền bỉ, vận hành liên tục trong môi trường xưởng.",
-      "2": "Bảo hành chính hãng, hỗ trợ kỹ thuật tận nơi.",
-      "3": "Tư vấn lắp đặt và đào tạo vận hành miễn phí."
+    "title": "Máy phun cát tuần hoàn không bụi",
+    "brandLine": "☯️ Khắc đá mỹ nghệ · ☯️ TÂM LINH Huyền bí",
+    "headline": "🌷🌷 MÁY PHUN CÁT — Tuần hoàn liên tục... không bụi",
+    "intro": {
+      "0": "🇧🇫 CHUYÊN DỤNG CHẠM KHẮC TRÊN ĐÁ GRANITE. TRÊN GƯƠNG KÍNH NỘI THẤT."
     },
+    "highlights": {
+      "0": "➡️ Phun sắc nét",
+      "1": "➡️ Khắc sâu, đẹp, bền màu",
+      "2": "➡️ Không bụi",
+      "3": "➡️ Không ô nhiễm · Bảo vệ sức khỏe",
+      "4": "➡️ Tiết kiệm chi phí nhờ hệ thống tuần hoàn cát"
+    },
+    "audience": "🌷🌷🌷 Phù hợp với xưởng đá, xưởng Nội thất quy mô từ nhỏ đến lớn",
+    "audienceNote": "➡️ Dễ vận hành, dễ đào tạo thợ.",
+    "advantagesTitle": "❤️ ƯU ĐIỂM VƯỢT TRỘI:",
+    "advantages": {
+      "0": "➡️ Tuần hoàn hạt cát · Giảm 80% lượng cát tiêu hao.",
+      "1": "➡️ Không bụi bay ra ngoài – Nhờ hệ thống lọc bụi 2 cấp mạnh mẽ.",
+      "2": "➡️ Khắc chính xác · Tay phun xoay linh hoạt, điều chỉnh độ sâu dễ dàng.",
+      "3": "➡️ Bàn thao tác phủ nỉ chống trầy xước đá · Gập gọn khi không sử dụng.",
+      "4": "➡️ Có bánh xe di chuyển – Dễ dàng bố trí trong xưởng hoặc mang ra công trình."
+    },
+    "specsTitle": "❤️ THÔNG SỐ CƠ BẢN:",
+    "specs": {
+      "0": "➡️ Nguồn điện: 220V hoặc 380V tùy chọn",
+      "1": "➡️ Công suất quạt hút bụi: 1.2HP – 3HP",
+      "2": "➡️ Loại hạt phù hợp: Nhôm oxit, bi thủy tinh mịn. Hạt mài",
+      "3": "➡️ Bề mặt làm việc: 600 x 1000mm (tùy chỉnh theo yêu cầu)"
+    },
+    "commitmentTitle": "❤️ CAM KẾT:",
+    "commitment": {
+      "0": "➡️ Hướng dẫn vận hành tận tình",
+      "1": "➡️ Cung cấp phụ tùng & vật tư đầy đủ",
+      "2": "➡️ Bảo hành 12 tháng · Hỗ trợ kỹ thuật trọn đời"
+    },
+    "contactTitle": "❤️❤️ LIÊN HỆ NGAY để được demo trực tiếp và nhận báo giá ưu đãi đặc biệt cho xưởng đá, Xưởng Nội thất Gương Kính!",
+    "contactLocation": "Đống Năm - Đông Hưng – Thái Bình",
+    "videoAlt": "Video demo máy phun cát tuần hoàn không bụi Tâm Linh Huyền Bí",
+    "imageAlt": "Máy phun cát tuần hoàn không bụi",
     "cta": "Liên hệ tư vấn",
-    "viewMore": "Xem thêm sản phẩm"
+    "viewMore": "Xem chi tiết máy phun cát"
   },
   "news": {
     "title": "Tin tức",
@@ -111,8 +143,8 @@
       "description": "Danh mục bia mộ đá granite, chữ nổi 3D, men sứ, bia công giáo tại Tâm Linh Huyền Bí."
     },
     "sandblasters": {
-      "title": "Máy bắn cát",
-      "description": "Máy bắn cát tủ, hộp và phụ kiện chuyên dụng cho xưởng khắc đá."
+      "title": "Máy phun cát tuần hoàn không bụi",
+      "description": "Máy phun cát tuần hoàn không bụi chuyên khắc đá granite, gương kính nội thất. Giảm 80% cát tiêu hao, bảo hành 12 tháng. Demo trực tiếp tại Tâm Linh Huyền Bí."
     },
     "pricing": {
       "title": "Giá khắc bia mộ",

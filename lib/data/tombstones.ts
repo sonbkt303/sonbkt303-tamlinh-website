@@ -3,7 +3,6 @@ import { crawledTombstoneItems } from "@/lib/data/crawled";
 export const tombstoneProducts = crawledTombstoneItems.map((item) => ({
   slug: item.slug,
   title: item.title,
-  price: item.price,
   category: item.category,
   image: item.image,
   productType: item.productType,
