@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Tam Linh Huyen Bi">
+  <rect width="32" height="32" rx="7" fill="#2a2118"/>
+  <rect x="1.25" y="1.25" width="29.5" height="29.5" rx="6" fill="none" stroke="#a67c3d" stroke-width="0.75" opacity="0.55"/>
+  <g transform="translate(16 17.5)" fill="#c9b896">
+    <ellipse cx="0" cy="3.5" rx="2.2" ry="1.1" fill="#a67c3d"/>
+    <path d="M0 -7.5C-3.8 -2.5 -4.8 2.2 0 4.8 4.8 2.2 3.8 -2.5 0 -7.5Z"/>
+    <path d="M-6.2 -0.5C-7.4 3.2 -3.8 5.8 0 3.6 -3.2 1.2 -4.8 -2.8 -6.2 -0.5Z" opacity="0.92"/>
+    <path d="M6.2 -0.5C4.8 -2.8 3.2 1.2 0 3.6 3.8 5.8 7.4 3.2 6.2 -0.5Z" opacity="0.92"/>
+    <path d="M-4 -5.2C-6.2 -1.5 -5 1.2 -1.5 2.5 -2.5 -1.2 -2.8 -3.8 -4 -5.2Z" opacity="0.78"/>
+    <path d="M4 -5.2C2.8 -3.8 2.5 -1.2 1.5 2.5 5 1.2 6.2 -1.5 4 -5.2Z" opacity="0.78"/>
+  </g>
+</svg>
